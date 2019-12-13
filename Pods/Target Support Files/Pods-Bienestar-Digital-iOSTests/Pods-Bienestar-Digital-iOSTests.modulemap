@@ -1,0 +1,6 @@
+framework module Pods_Bienestar_Digital_iOSTests {
+  umbrella header "Pods-Bienestar-Digital-iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests
+@end

@@ -15,6 +15,9 @@
 		2BCB030B23A3A6FC00F64ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCB030923A3A6FC00F64ECE /* LaunchScreen.storyboard */; };
 		2BCB031623A3A6FD00F64ECE /* Bienestar_Digital_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB031523A3A6FD00F64ECE /* Bienestar_Digital_iOSTests.swift */; };
 		2BCB032123A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB032023A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift */; };
+		4AA6A545217E990E339BA23A /* Pods_Bienestar_Digital_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519AAA1335DAA7DEBE6350CC /* Pods_Bienestar_Digital_iOSTests.framework */; };
+		82C730B3EF26D4154FED6DCF /* Pods_Bienestar_Digital_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BB77CD2907CD69A5780BFB /* Pods_Bienestar_Digital_iOS.framework */; };
+		F632EFAB83D2CAED1C46544E /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4850376D36DAE5E0EDDA9A89 /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1250D4717B2B53B9A2AFBF6B /* Pods-Bienestar-Digital-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOSTests/Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2BCB02FB23A3A6FC00F64ECE /* Bienestar-Digital-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bienestar-Digital-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCB030023A3A6FC00F64ECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		2BCB031C23A3A6FD00F64ECE /* Bienestar-Digital-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bienestar-Digital-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCB032023A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bienestar_Digital_iOSUITests.swift; sourceTree = "<group>"; };
 		2BCB032223A3A6FD00F64ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4850376D36DAE5E0EDDA9A89 /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		519AAA1335DAA7DEBE6350CC /* Pods_Bienestar_Digital_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestar_Digital_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8940C3328381994ED814AD27 /* Pods-Bienestar-Digital-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOSTests/Pods-Bienestar-Digital-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCDBA7A3470697BB66AEAB23 /* Pods-Bienestar-Digital-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS.release.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS/Pods-Bienestar-Digital-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C8BB77CD2907CD69A5780BFB /* Pods_Bienestar_Digital_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestar_Digital_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C5F31B42E532A4B3DEB3BA /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAC25669E92EE1228DAE786E /* Pods-Bienestar-Digital-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS/Pods-Bienestar-Digital-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C730B3EF26D4154FED6DCF /* Pods_Bienestar_Digital_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA6A545217E990E339BA23A /* Pods_Bienestar_Digital_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F632EFAB83D2CAED1C46544E /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0784BB2D05F73A87B1428CA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAC25669E92EE1228DAE786E /* Pods-Bienestar-Digital-iOS.debug.xcconfig */,
+				BCDBA7A3470697BB66AEAB23 /* Pods-Bienestar-Digital-iOS.release.xcconfig */,
+				2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */,
+				C8C5F31B42E532A4B3DEB3BA /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.release.xcconfig */,
+				1250D4717B2B53B9A2AFBF6B /* Pods-Bienestar-Digital-iOSTests.debug.xcconfig */,
+				8940C3328381994ED814AD27 /* Pods-Bienestar-Digital-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2BCB02F223A3A6FC00F64ECE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				2BCB031423A3A6FD00F64ECE /* Bienestar-Digital-iOSTests */,
 				2BCB031F23A3A6FD00F64ECE /* Bienestar-Digital-iOSUITests */,
 				2BCB02FC23A3A6FC00F64ECE /* Products */,
+				0784BB2D05F73A87B1428CA2 /* Pods */,
+				FE094155667B485654C46A33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +159,16 @@
 			path = "Bienestar-Digital-iOSUITests";
 			sourceTree = "<group>";
 		};
+		FE094155667B485654C46A33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8BB77CD2907CD69A5780BFB /* Pods_Bienestar_Digital_iOS.framework */,
+				4850376D36DAE5E0EDDA9A89 /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework */,
+				519AAA1335DAA7DEBE6350CC /* Pods_Bienestar_Digital_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BCB032523A3A6FD00F64ECE /* Build configuration list for PBXNativeTarget "Bienestar-Digital-iOS" */;
 			buildPhases = (
+				31F6291359823A4539E91E43 /* [CP] Check Pods Manifest.lock */,
 				2BCB02F723A3A6FC00F64ECE /* Sources */,
 				2BCB02F823A3A6FC00F64ECE /* Frameworks */,
 				2BCB02F923A3A6FC00F64ECE /* Resources */,
+				36C87F193B40BE9F87B5CF12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BCB032823A3A6FD00F64ECE /* Build configuration list for PBXNativeTarget "Bienestar-Digital-iOSTests" */;
 			buildPhases = (
+				4D29969DB8BA26D7F24DE411 /* [CP] Check Pods Manifest.lock */,
 				2BCB030D23A3A6FD00F64ECE /* Sources */,
 				2BCB030E23A3A6FD00F64ECE /* Frameworks */,
 				2BCB030F23A3A6FD00F64ECE /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BCB032B23A3A6FD00F64ECE /* Build configuration list for PBXNativeTarget "Bienestar-Digital-iOSUITests" */;
 			buildPhases = (
+				01AC71DCEA18BFF2DB44956C /* [CP] Check Pods Manifest.lock */,
 				2BCB031823A3A6FD00F64ECE /* Sources */,
 				2BCB031923A3A6FD00F64ECE /* Frameworks */,
 				2BCB031A23A3A6FD00F64ECE /* Resources */,
+				1A8A9D6DBA5CA92721703AA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +299,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01AC71DCEA18BFF2DB44956C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A8A9D6DBA5CA92721703AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31F6291359823A4539E91E43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bienestar-Digital-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36C87F193B40BE9F87B5CF12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bienestar-Digital-iOS/Pods-Bienestar-Digital-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bienestar-Digital-iOS/Pods-Bienestar-Digital-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bienestar-Digital-iOS/Pods-Bienestar-Digital-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D29969DB8BA26D7F24DE411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bienestar-Digital-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BCB02F723A3A6FC00F64ECE /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		2BCB032623A3A6FD00F64ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC25669E92EE1228DAE786E /* Pods-Bienestar-Digital-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +600,7 @@
 		};
 		2BCB032723A3A6FD00F64ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDBA7A3470697BB66AEAB23 /* Pods-Bienestar-Digital-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +619,7 @@
 		};
 		2BCB032923A3A6FD00F64ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1250D4717B2B53B9A2AFBF6B /* Pods-Bienestar-Digital-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +642,7 @@
 		};
 		2BCB032A23A3A6FD00F64ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8940C3328381994ED814AD27 /* Pods-Bienestar-Digital-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +665,7 @@
 		};
 		2BCB032C23A3A6FD00F64ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +686,7 @@
 		};
 		2BCB032D23A3A6FD00F64ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C5F31B42E532A4B3DEB3BA /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
