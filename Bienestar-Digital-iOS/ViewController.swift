@@ -7,12 +7,25 @@
 //
 
 import UIKit
-
+import Alamofire
 class ViewController: UIViewController {
-
+    @IBOutlet weak var textFieldEmail: UITextField!
+    @IBOutlet weak var textFieldPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    func checkLogin() {
+        let url = "http://localhost:8888/BienestarDigital/public/index.php/api/users";
+        let parameters : Parameters=[
+            "email":textFieldEmail.text!,
+            "password":textFieldPassword.text!
+        ]
+        Alamofire.request(url, method: .post, parameters: parameters).responseJSON {
+            
+        }
     }
 
 
