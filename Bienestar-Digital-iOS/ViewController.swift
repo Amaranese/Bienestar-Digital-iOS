@@ -24,7 +24,14 @@ class ViewController: UIViewController {
             "password":textFieldPassword.text!
         ]
         Alamofire.request(url, method: .post, parameters: parameters).responseJSON {
-            
+            response in
+            if let result = response.result.value {
+                let jsonData = result as! NSDictionary
+                let statusCode = response.response!.statusCode
+                if statusCode != 200 {
+                    let alert = UIAlertController(title: "Error", message: jsonData["MESSAGE"] as! String, preferredStyle: .alert)
+                }
+            }
         }
     }
 
