@@ -42,7 +42,7 @@
                                 </state>
                                 <connections>
                                     <action selector="userRegister:" destination="ZwS-KA-EpF" eventType="touchUpInside" id="Rjp-oX-hEC"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="jwo-x5-aZQ"/>
+                                    <segue destination="Ydl-ja-8qy" kind="show" id="o0G-MD-NHE"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password : " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-kD-8Xc">
@@ -118,6 +118,22 @@
             <point key="canvasLocation" x="-700" y="849.77678571428567"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="OwI-3b-Qi5">
+            <objects>
+                <viewController id="Ydl-ja-8qy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iG2-p7-UL6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="txg-dJ-aid"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jPI-L4-fPu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfw-OO-8V6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="850"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bienestar_Digital_iOS" sceneMemberID="viewController">
@@ -184,7 +200,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="dzG-Ho-juO"/>
-    </inferredMetricsTieBreakers>
 </document>
