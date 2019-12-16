@@ -41,6 +41,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="userRegister:" destination="ZwS-KA-EpF" eventType="touchUpInside" id="Rjp-oX-hEC"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="jwo-x5-aZQ"/>
                                 </connections>
                             </button>
@@ -66,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="-700" y="119.86607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--RecoverVC-->
         <scene sceneID="ZHt-eK-cDs">
             <objects>
-                <viewController id="wor-d9-FMG" sceneMemberID="viewController">
+                <viewController id="wor-d9-FMG" customClass="RecoverVC" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xAc-32-svL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,6 +170,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jwo-x5-aZQ"/>
+        <segue reference="dzG-Ho-juO"/>
     </inferredMetricsTieBreakers>
 </document>

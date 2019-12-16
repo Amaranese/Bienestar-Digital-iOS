@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     func checkLogin() {
-        let url = "http://localhost:8888/BienestarDigital/public/index.php/api/users";
+        let url = "http://localhost:8888/BienestarDigital/public/index.php/api/login";
         let parameters : Parameters=[
             "email":textFieldEmail.text!,
             "password":textFieldPassword.text!
