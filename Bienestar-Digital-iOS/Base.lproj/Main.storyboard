@@ -10,7 +10,7 @@
         <!--Register View Controller-->
         <scene sceneID="nbd-eh-3UE">
             <objects>
-                <viewController id="ZwS-KA-EpF" userLabel="Register View Controller" customClass="RegisterVC" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZwS-KA-EpF" userLabel="Register View Controller" customClass="RegisterVC" customModule="Bienestar_Digital_iOS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lkT-OQ-P55">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
         <!--RecoverVC-->
         <scene sceneID="ZHt-eK-cDs">
             <objects>
-                <viewController id="wor-d9-FMG" customClass="RecoverVC" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wor-d9-FMG" customClass="RecoverVC" customModule="Bienestar_Digital_iOS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xAc-32-svL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,19 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="recoverPassAction:" destination="wor-d9-FMG" eventType="touchUpInside" id="kuL-zv-lYF"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="dzG-Ho-juO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-hb-T6T">
+                                <rect key="frame" x="28" y="57" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="&lt;-">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="wor-d9-FMG" eventType="touchUpInside" id="dHg-a8-Yoc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,6 +109,9 @@
                         <viewLayoutGuide key="safeArea" id="ccT-Ep-MIg"/>
                     </view>
                     <navigationItem key="navigationItem" id="jmt-Ii-gHq"/>
+                    <connections>
+                        <outlet property="mailField" destination="ULE-Y6-t8K" id="uVG-Ac-cnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A45-oy-e8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +120,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bienestar_Digital_iOS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
