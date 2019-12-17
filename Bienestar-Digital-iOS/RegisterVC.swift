@@ -26,7 +26,6 @@ class RegisterVC: UIViewController {
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
     @IBAction func userRegister(_ sender: UIButton) {
         if textFieldUsuario.text! == "" || textFieldEmail.text! == "" || textFieldPassword.text! == "" || textFieldRepeatPassword.text! == ""{
             let alert = UIAlertController(title: "Error", message: "Has de rellenar todos los campos" as! String, preferredStyle: .alert)
