@@ -27,7 +27,7 @@ class RecoverVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     func recoverPassword(){
-        let url = "http://localhost:8888/BienestarDigital/public/index.php/api/recover";
+        let url = "";
         let parameters: Parameters=[
             "email":mailField.text!
         ]
