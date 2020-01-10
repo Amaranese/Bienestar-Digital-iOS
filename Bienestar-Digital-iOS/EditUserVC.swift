@@ -10,4 +10,8 @@ import Foundation
 import UIKit
 import Alamofire
 class EditUserVC: UIViewController {
+    @IBOutlet weak var newemail: UITextField!
+    @IBOutlet weak var oldpass: UITextField!
+    @IBOutlet weak var newpass: UITextField!
+    @IBOutlet weak var repeatnewpass: UITextField!
 }

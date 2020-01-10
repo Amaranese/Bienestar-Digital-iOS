@@ -249,6 +249,9 @@
                                 <state key="normal" title="LogOut">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOut:" destination="fuH-4q-b9l" eventType="touchUpInside" id="00X-eg-er0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3C-2m-xrU">
                                 <rect key="frame" x="116" y="611" width="182" height="35"/>
@@ -257,11 +260,20 @@
                                 <state key="normal" title="Change">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="editUser:" destination="fuH-4q-b9l" eventType="touchUpInside" id="qg7-WY-r8J"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="s1W-aY-vHb"/>
                     </view>
+                    <connections>
+                        <outlet property="newemail" destination="qMO-dB-Asf" id="YcI-eR-VEx"/>
+                        <outlet property="newpass" destination="GW8-K6-gb4" id="ni7-z1-01N"/>
+                        <outlet property="oldpass" destination="jm6-bw-PRr" id="6zO-zR-BvJ"/>
+                        <outlet property="repeatnewpass" destination="CNp-vK-hAy" id="Lud-9B-huj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Zi-6p-EQZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
