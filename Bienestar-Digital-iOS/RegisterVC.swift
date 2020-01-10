@@ -53,7 +53,7 @@ class RegisterVC: UIViewController {
         return emailPredicate.evaluate(with: enteredEmail)
     }
     func register() {
-        let url = "";
+        let url = "http://localhost:8888/Bienestar/public/index.php/api/user";
         let parameters: Parameters = [
         "name":textFieldUsuario.text!,
         "email":textFieldEmail.text!,
@@ -76,7 +76,6 @@ class RegisterVC: UIViewController {
                     }))
                     self.present(alert, animated: true)
                 }
-                
             }
         }
     }
