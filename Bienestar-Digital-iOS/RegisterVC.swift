@@ -70,10 +70,17 @@ class RegisterVC: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true)
                 } else {
-                    let token = jsonData["MESSAGE"] as! String
+                    let userToken = jsonData["MESSAGE"] as! String
+                    UserDefaults.standard.set(userToken, forKey: "token")
+                    UserDefaults.standard.set(true, forKey: "userLogged")
                     let alert = UIAlertController(title: "Enhorabuena", message: "Bienvenido a bienestar digital", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                        self.dismiss(animated: true, completion: nil)
+//                        self.dismiss(animated: true, completion: nil)
+//                        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+//                            appDelegate.startNavViewController()
+//                        }
+                        let seleccionaAppsVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "SeleccionarAppsVC") as! SeleccionarAppsVC
+                        self.present(seleccionaAppsVC, animated: true, completion: nil)
                     }))
                     self.present(alert, animated: true)
                 }

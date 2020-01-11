@@ -37,8 +37,11 @@ class ViewController: UIViewController {
                     let userToken = arrayToken["MESSAGE"]!
                     UserDefaults.standard.set(userToken, forKey: "token")
                     UserDefaults.standard.set(true, forKey: "userLogged")
-                    let goMain = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
-                    self.present(goMain!, animated: true)
+//                    let goMain = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
+//                    self.present(goMain!, animated: true)
+                    if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                        appDelegate.startNavViewController()
+                    }
                     
                 }
             }
