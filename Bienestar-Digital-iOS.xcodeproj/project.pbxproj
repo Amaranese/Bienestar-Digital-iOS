@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B23FBD723C9D96600D264AC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBD623C9D96600D264AC /* HomeVC.swift */; };
 		2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B593D5523A8D02200656FC4 /* EditUserVC.swift */; };
 		2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21123A77F94002EC3AE /* RegisterVC.swift */; };
 		2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21323A78435002EC3AE /* RecoverVC.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		1250D4717B2B53B9A2AFBF6B /* Pods-Bienestar-Digital-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOSTests/Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B23FBD623C9D96600D264AC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2B593D5523A8D02200656FC4 /* EditUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserVC.swift; sourceTree = "<group>"; };
 		2B80A21123A77F94002EC3AE /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		2B80A21323A78435002EC3AE /* RecoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverVC.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				2BCB030723A3A6FC00F64ECE /* Assets.xcassets */,
 				2BCB030923A3A6FC00F64ECE /* LaunchScreen.storyboard */,
 				2BCB030C23A3A6FC00F64ECE /* Info.plist */,
+				2B23FBD623C9D96600D264AC /* HomeVC.swift */,
 			);
 			path = "Bienestar-Digital-iOS";
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BCB030323A3A6FC00F64ECE /* ViewController.swift in Sources */,
+				2B23FBD723C9D96600D264AC /* HomeVC.swift in Sources */,
 				2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */,
 				2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */,
 				2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */,

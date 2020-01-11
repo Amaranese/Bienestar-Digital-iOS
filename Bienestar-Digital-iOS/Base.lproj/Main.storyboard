@@ -42,7 +42,6 @@
                                 </state>
                                 <connections>
                                     <action selector="userRegister:" destination="ZwS-KA-EpF" eventType="touchUpInside" id="Rjp-oX-hEC"/>
-                                    <segue destination="Ydl-ja-8qy" kind="show" id="o0G-MD-NHE"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password : " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-kD-8Xc">
@@ -128,13 +127,20 @@
             </objects>
             <point key="canvasLocation" x="-700" y="849.77678571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="OwI-3b-Qi5">
             <objects>
-                <viewController id="Ydl-ja-8qy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="Ydl-ja-8qy" customClass="HomeVC" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iG2-p7-UL6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-Hj-7XP">
+                                <rect key="frame" x="184" y="350" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="txg-dJ-aid"/>
                     </view>
@@ -292,6 +298,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="F1j-sm-4MS"/>
+        <segue reference="dzG-Ho-juO"/>
     </inferredMetricsTieBreakers>
 </document>

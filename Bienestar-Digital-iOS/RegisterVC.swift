@@ -70,7 +70,8 @@ class RegisterVC: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true)
                 } else {
-                    let alert = UIAlertController(title: "Enhorabuena", message: jsonData["MESSAGE"] as! String, preferredStyle: .alert)
+                    let token = jsonData["MESSAGE"] as! String
+                    let alert = UIAlertController(title: "Enhorabuena", message: "Bienvenido a bienestar digital", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                         self.dismiss(animated: true, completion: nil)
                     }))
