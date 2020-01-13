@@ -14,7 +14,11 @@ class SeleccionarAppsVC: UIViewController {
     
     let apps = [
         App(nombre: "Whatsapp", image: UIImage(named: "whatsapp")!),
-        App(nombre: "Instagram", image: UIImage(named: "instagram")!)
+        App(nombre: "Instagram", image: UIImage(named: "instagram")!),
+        App(nombre: "Clock", image: UIImage(named: "clock")!),
+        App(nombre: "Facebook", image: UIImage(named: "facebook")!),
+        App(nombre: "Gmail", image: UIImage(named: "gmail")!),
+        App(nombre: "Chrome", image: UIImage(named: "chrome")!)
     ]
     
     override func viewDidLoad() {
