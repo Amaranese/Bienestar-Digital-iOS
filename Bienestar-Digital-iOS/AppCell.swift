@@ -13,14 +13,10 @@ class AppCell: UITableViewCell {
     @IBOutlet weak var ivLogo: UIImageView!
     @IBOutlet weak var tvNombre: UILabel!
     
-    
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
