@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B23FBD723C9D96600D264AC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBD623C9D96600D264AC /* HomeVC.swift */; };
 		2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */; };
 		2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDA23C9E48000D264AC /* AppCell.swift */; };
 		2B23FBDD23C9E55E00D264AC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDC23C9E55E00D264AC /* App.swift */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		1250D4717B2B53B9A2AFBF6B /* Pods-Bienestar-Digital-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOSTests/Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2B23FBD623C9D96600D264AC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionarAppsVC.swift; sourceTree = "<group>"; };
 		2B23FBDA23C9E48000D264AC /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		2B23FBDC23C9E55E00D264AC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -142,16 +140,15 @@
 			isa = PBXGroup;
 			children = (
 				2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */,
-				2BCB030223A3A6FC00F64ECE /* ViewController.swift */,
-				2B593D5523A8D02200656FC4 /* EditUserVC.swift */,
-				2B80A21323A78435002EC3AE /* RecoverVC.swift */,
-				2B80A21123A77F94002EC3AE /* RegisterVC.swift */,
+				2BE8C06223D209780026E1DD /* Home */,
+				2BE8C06123D209410026E1DD /* Recover */,
+				2BE8C06023D209380026E1DD /* Register */,
+				2BE8C05F23D2092D0026E1DD /* Login */,
+				2BE8C06323D209900026E1DD /* Profile */,
 				2BCB030423A3A6FC00F64ECE /* Main.storyboard */,
 				2BCB030723A3A6FC00F64ECE /* Assets.xcassets */,
 				2BCB030923A3A6FC00F64ECE /* LaunchScreen.storyboard */,
 				2BCB030C23A3A6FC00F64ECE /* Info.plist */,
-				2B23FBD623C9D96600D264AC /* HomeVC.swift */,
-				2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */,
 				2B23FBDA23C9E48000D264AC /* AppCell.swift */,
 				2B23FBDC23C9E55E00D264AC /* App.swift */,
 			);
@@ -174,6 +171,46 @@
 				2BCB032223A3A6FD00F64ECE /* Info.plist */,
 			);
 			path = "Bienestar-Digital-iOSUITests";
+			sourceTree = "<group>";
+		};
+		2BE8C05F23D2092D0026E1DD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2BCB030223A3A6FC00F64ECE /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2BE8C06023D209380026E1DD /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2B80A21123A77F94002EC3AE /* RegisterVC.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2BE8C06123D209410026E1DD /* Recover */ = {
+			isa = PBXGroup;
+			children = (
+				2B80A21323A78435002EC3AE /* RecoverVC.swift */,
+			);
+			path = Recover;
+			sourceTree = "<group>";
+		};
+		2BE8C06223D209780026E1DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2BE8C06323D209900026E1DD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2B593D5523A8D02200656FC4 /* EditUserVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		FE094155667B485654C46A33 /* Frameworks */ = {
@@ -428,7 +465,6 @@
 				2B23FBDD23C9E55E00D264AC /* App.swift in Sources */,
 				2BCB030323A3A6FC00F64ECE /* ViewController.swift in Sources */,
 				2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */,
-				2B23FBD723C9D96600D264AC /* HomeVC.swift in Sources */,
 				2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */,
 				2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */,
 				2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */,

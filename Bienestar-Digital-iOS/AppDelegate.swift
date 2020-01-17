@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var storyBoard :UIStoryboard?
     var navigationController : UINavigationController?
-    var homeVC: HomeVC = HomeVC()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -32,8 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             storyBoard = UIStoryboard(name: "Main", bundle:nil)
         }
         navigationController?.setNavigationBarHidden(true, animated: true)
+        let homeVC: SeleccionarAppsVC
         // storyboard with identifer
-        homeVC = storyBoard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+        homeVC = storyBoard?.instantiateViewController(withIdentifier: "SeleccionarAppsVC") as! SeleccionarAppsVC
         navigationController?.pushViewController(homeVC , animated: true)
 
         window?.rootViewController = navigationController
