@@ -20,6 +20,7 @@
 		2BCB030B23A3A6FC00F64ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCB030923A3A6FC00F64ECE /* LaunchScreen.storyboard */; };
 		2BCB031623A3A6FD00F64ECE /* Bienestar_Digital_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB031523A3A6FD00F64ECE /* Bienestar_Digital_iOSTests.swift */; };
 		2BCB032123A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB032023A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift */; };
+		2BDCA27423D5D39600FF9089 /* usage.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2BDCA27323D5D39600FF9089 /* usage.csv */; };
 		4AA6A545217E990E339BA23A /* Pods_Bienestar_Digital_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519AAA1335DAA7DEBE6350CC /* Pods_Bienestar_Digital_iOSTests.framework */; };
 		82C730B3EF26D4154FED6DCF /* Pods_Bienestar_Digital_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BB77CD2907CD69A5780BFB /* Pods_Bienestar_Digital_iOS.framework */; };
 		F632EFAB83D2CAED1C46544E /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4850376D36DAE5E0EDDA9A89 /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework */; };
@@ -64,6 +65,7 @@
 		2BCB031C23A3A6FD00F64ECE /* Bienestar-Digital-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bienestar-Digital-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCB032023A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bienestar_Digital_iOSUITests.swift; sourceTree = "<group>"; };
 		2BCB032223A3A6FD00F64ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BDCA27323D5D39600FF9089 /* usage.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = usage.csv; sourceTree = "<group>"; };
 		4850376D36DAE5E0EDDA9A89 /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		519AAA1335DAA7DEBE6350CC /* Pods_Bienestar_Digital_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestar_Digital_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8940C3328381994ED814AD27 /* Pods-Bienestar-Digital-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOSTests/Pods-Bienestar-Digital-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				2BCB030C23A3A6FC00F64ECE /* Info.plist */,
 				2B23FBDA23C9E48000D264AC /* AppCell.swift */,
 				2B23FBDC23C9E55E00D264AC /* App.swift */,
+				2BDCA27323D5D39600FF9089 /* usage.csv */,
 			);
 			path = "Bienestar-Digital-iOS";
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BDCA27423D5D39600FF9089 /* usage.csv in Resources */,
 				2BCB030B23A3A6FC00F64ECE /* LaunchScreen.storyboard in Resources */,
 				2BCB030823A3A6FC00F64ECE /* Assets.xcassets in Resources */,
 				2BCB030623A3A6FC00F64ECE /* Main.storyboard in Resources */,
