@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arboleda,-bosque,-hojarasca-150152" translatesAutoresizingMaskIntoConstraints="NO" id="qq0-cL-HgC">
-                                <rect key="frame" x="-386" y="-283" width="1252" height="1417"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arbol" translatesAutoresizingMaskIntoConstraints="NO" id="Aio-Rm-DOE">
+                                <rect key="frame" x="-84" y="-286" width="582" height="1148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email : " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-IH-kci">
@@ -167,11 +167,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="tree-736885_1280" translatesAutoresizingMaskIntoConstraints="NO" id="CHF-Ag-NOm">
-                                <rect key="frame" x="-559" y="-542" width="1533" height="1926"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arbol" translatesAutoresizingMaskIntoConstraints="NO" id="9cc-Mb-jIe">
+                                <rect key="frame" x="-84" y="-252" width="582" height="1148"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email : " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-xG-2dL">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email : " textAlignment="natural" minimumFontSize="17" background="arbol" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-xG-2dL">
                                 <rect key="frame" x="20" y="359" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -514,7 +514,6 @@
     </scenes>
     <resources>
         <image name="arbol" width="582" height="1148"/>
-        <image name="arboleda,-bosque,-hojarasca-150152" width="850" height="566"/>
         <image name="tree-736885_1280" width="1280" height="796"/>
     </resources>
 </document>
