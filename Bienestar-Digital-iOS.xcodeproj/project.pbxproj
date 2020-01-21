@@ -22,6 +22,7 @@
 		2BCB032123A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB032023A3A6FD00F64ECE /* Bienestar_Digital_iOSUITests.swift */; };
 		2BDCA27423D5D39600FF9089 /* usage.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2BDCA27323D5D39600FF9089 /* usage.csv */; };
 		2BFC53D123D76CAC00394986 /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC53CF23D76A9200394986 /* Usage.swift */; };
+		2BFC53D323D77C5F00394986 /* UsageRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFC53D223D77C5F00394986 /* UsageRegistration.swift */; };
 		4AA6A545217E990E339BA23A /* Pods_Bienestar_Digital_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519AAA1335DAA7DEBE6350CC /* Pods_Bienestar_Digital_iOSTests.framework */; };
 		82C730B3EF26D4154FED6DCF /* Pods_Bienestar_Digital_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BB77CD2907CD69A5780BFB /* Pods_Bienestar_Digital_iOS.framework */; };
 		F632EFAB83D2CAED1C46544E /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4850376D36DAE5E0EDDA9A89 /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework */; };
@@ -68,6 +69,7 @@
 		2BCB032223A3A6FD00F64ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BDCA27323D5D39600FF9089 /* usage.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = usage.csv; sourceTree = "<group>"; };
 		2BFC53CF23D76A9200394986 /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
+		2BFC53D223D77C5F00394986 /* UsageRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageRegistration.swift; sourceTree = "<group>"; };
 		4850376D36DAE5E0EDDA9A89 /* Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestar_Digital_iOS_Bienestar_Digital_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		519AAA1335DAA7DEBE6350CC /* Pods_Bienestar_Digital_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bienestar_Digital_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8940C3328381994ED814AD27 /* Pods-Bienestar-Digital-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOSTests/Pods-Bienestar-Digital-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				2B80A21123A77F94002EC3AE /* RegisterVC.swift */,
+				2BFC53D223D77C5F00394986 /* UsageRegistration.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */,
 				2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */,
 				2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */,
+				2BFC53D323D77C5F00394986 /* UsageRegistration.swift in Sources */,
 				2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

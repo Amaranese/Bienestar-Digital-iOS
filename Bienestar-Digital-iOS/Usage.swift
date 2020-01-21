@@ -9,7 +9,7 @@
 import UIKit
 
 //Date,App,Event,Latitude,Longitude
-class Usage {
+class Usage: Codable {
     let date: String
     let app: String
     let event: String
