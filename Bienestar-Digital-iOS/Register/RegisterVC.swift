@@ -102,6 +102,7 @@ class RegisterVC: UIViewController {
             Alamofire.request(url,
                             method: .post,
                             parameters: parameters,
+                            encoding: JSONEncoding.default,
                             headers: ["Content-Type": "application/json"]).responseString { [weak self] response in
                 guard let self = self else { return }
                 if let result = response.result.value {
