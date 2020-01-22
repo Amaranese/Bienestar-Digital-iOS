@@ -15,7 +15,6 @@ class Usage: Codable {
     let event: String
     let latitude: Double
     let longitude: Double
-    
     init(line: String) {
         let fields = line.split(separator: ",")
         self.date = String(fields[0])

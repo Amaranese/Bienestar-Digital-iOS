@@ -9,7 +9,6 @@
 import UIKit
 
 class SeleccionarAppsVC: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
     var apps: [Usage] = []
 //    var apps = [
@@ -25,8 +24,6 @@ class SeleccionarAppsVC: UIViewController {
         tableView.allowsMultipleSelection = true
         let lines = self.loadDataCSV()
         apps = self.loadUsages(lines: lines)
-        
-        
     }
     func loadDataCSV() -> [String] {
         var usages: [String] = []

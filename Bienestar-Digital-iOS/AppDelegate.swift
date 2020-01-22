@@ -7,19 +7,15 @@
 //
 
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
     var storyBoard :UIStoryboard?
     var navigationController : UINavigationController?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
-    
     func startNavViewController() {
         if window == nil {
             window = UIWindow(frame: UIScreen.main.bounds)
@@ -35,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // storyboard with identifer
         homeVC = storyBoard?.instantiateViewController(withIdentifier: "SeleccionarAppsVC") as! SeleccionarAppsVC
         navigationController?.pushViewController(homeVC , animated: true)
-
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }

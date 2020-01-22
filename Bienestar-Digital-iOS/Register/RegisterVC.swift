@@ -94,32 +94,27 @@ class RegisterVC: UIViewController {
             }
         }
     }
-    
     func registerUsages(userID: Int, usages: [Usage]) {
         let url = "http://localhost:8888/Bienestar/public/index.php/api/usagesRegistration";
         let data = UsageRegistration(user_id: userID, usages: usages)
         if let parameters = try? data.asDictionary() {
             Alamofire.request(url,
-                            method: .post,
-                            parameters: parameters,
-                            encoding: JSONEncoding.default,
-                            headers: ["Content-Type": "application/json"]).responseString { [weak self] response in
-                guard let self = self else { return }
-                if let result = response.result.value {
-                    let description = response.description
-                    let jsonData = result as! NSDictionary
-                    let statusCode = response.response!.statusCode
-                    print(statusCode)
-                    if statusCode != 200 {
-                        
+                              method: .post,
+                              parameters: parameters,
+                              encoding: JSONEncoding.default,
+                              headers: ["Content-Type": "application/json"]).responseString { [weak self] response in
+                                guard let self = self else { return }
+                                if let result = response.result.value {
+                                    let description = response.description
+                                    let jsonData = result as! NSDictionary
+                                    let statusCode = response.response!.statusCode
+                                    print(statusCode)
+                                    if statusCode != 200 {
+                                    }
+                                }
+                            }
+                        }
                     }
-                }
-                
-            }
-        }
-        
-    }
-    
     func loadDataCSV() -> [String] {
         var usages: [String] = []
         if let path = Bundle.main.path(forResource: "usage", ofType: "csv") {
@@ -140,14 +135,13 @@ class RegisterVC: UIViewController {
         return usages
     }
 }
-
 extension Encodable {
-  func asDictionary() throws -> [String: Any] {
-    let data = try JSONEncoder().encode(self)
-    guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
-      throw NSError()
+    func asDictionary() throws -> [String: Any] {
+        let data = try JSONEncoder().encode(self)
+        guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+            throw NSError()
+        }
+        return dictionary
     }
-    return dictionary
-  }
 }
 
