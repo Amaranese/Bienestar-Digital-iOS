@@ -12,7 +12,6 @@ class AppCell: UITableViewCell {
 
     @IBOutlet weak var ivLogo: UIImageView!
     @IBOutlet weak var tvNombre: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +21,4 @@ class AppCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
