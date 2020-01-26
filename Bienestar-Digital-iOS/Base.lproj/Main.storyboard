@@ -355,7 +355,7 @@
                                         <connections>
                                             <outlet property="ivLogo" destination="IyN-jI-Lu0" id="hUb-pC-cai"/>
                                             <outlet property="tvNombre" destination="wYY-dT-vX8" id="ic3-9y-qK6"/>
-                                            <segue destination="dyH-VK-10X" kind="show" id="aDK-tf-xVJ"/>
+                                            <segue destination="dyH-VK-10X" kind="show" identifier="appDetailSegue" id="aDK-tf-xVJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -418,17 +418,61 @@
             </objects>
             <point key="canvasLocation" x="643" y="-544"/>
         </scene>
-        <!--View Controller-->
+        <!--App Detail View Controller-->
         <scene sceneID="Q7d-dx-8ua">
             <objects>
-                <viewController id="dyH-VK-10X" sceneMemberID="viewController">
+                <viewController id="dyH-VK-10X" customClass="AppDetailViewController" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z9Z-a5-BeH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uso total: 30h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsp-Up-v8e">
+                                <rect key="frame" x="122" y="136" width="170.5" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D9C-Go-rmb">
+                                <rect key="frame" x="16" y="185.5" width="382" height="676.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="saF-9q-EJr">
+                                        <rect key="frame" x="0.0" y="28" width="382" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="saF-9q-EJr" id="o7s-l4-MoE">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xBc-oS-FLf">
+                                <rect key="frame" x="308.5" y="121" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="0lE-mW-AFl"/>
+                                    <constraint firstAttribute="height" constant="64" id="q0b-mg-pZA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D9C-Go-rmb" firstAttribute="top" secondItem="jsp-Up-v8e" secondAttribute="bottom" constant="16" id="8aW-WW-qAm"/>
+                            <constraint firstItem="Fux-kQ-O5R" firstAttribute="bottom" secondItem="D9C-Go-rmb" secondAttribute="bottom" id="Nf9-v0-aX7"/>
+                            <constraint firstItem="D9C-Go-rmb" firstAttribute="leading" secondItem="Fux-kQ-O5R" secondAttribute="leading" constant="16" id="Pof-ns-ijp"/>
+                            <constraint firstItem="xBc-oS-FLf" firstAttribute="leading" secondItem="jsp-Up-v8e" secondAttribute="trailing" constant="16" id="T8G-zn-lDb"/>
+                            <constraint firstItem="xBc-oS-FLf" firstAttribute="centerY" secondItem="jsp-Up-v8e" secondAttribute="centerY" id="ccr-un-tAA"/>
+                            <constraint firstItem="jsp-Up-v8e" firstAttribute="top" secondItem="Fux-kQ-O5R" secondAttribute="top" constant="48" id="eBy-rN-Wf2"/>
+                            <constraint firstItem="Fux-kQ-O5R" firstAttribute="trailing" secondItem="D9C-Go-rmb" secondAttribute="trailing" constant="16" id="t9y-Tp-ifE"/>
+                            <constraint firstItem="jsp-Up-v8e" firstAttribute="centerX" secondItem="z9Z-a5-BeH" secondAttribute="centerX" id="vPC-s9-pGH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fux-kQ-O5R"/>
                     </view>
                     <navigationItem key="navigationItem" id="xwk-A8-wpg"/>
+                    <connections>
+                        <outlet property="imIcon" destination="xBc-oS-FLf" id="VDj-xj-XgI"/>
+                        <outlet property="lbTitle" destination="jsp-Up-v8e" id="eu1-UW-N7g"/>
+                        <outlet property="tableView" destination="D9C-Go-rmb" id="h1C-eY-vn7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3z-oV-iCB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

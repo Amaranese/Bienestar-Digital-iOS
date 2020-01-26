@@ -13,6 +13,7 @@ class SeleccionarAppsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var usages: [UsageApps] = []
     var apps: [App] = []
+    var usagesDetail: [UsageApps] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         loadUsages()
@@ -68,10 +69,28 @@ class SeleccionarAppsVC: UIViewController {
         }
         self.tableView.reloadData()
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "appDetailSegue") {
+            let vc = segue.destination as! AppDetailViewController
+            vc.usages = usagesDetail
+        }
+    }
 }
 extension SeleccionarAppsVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 32
+    }
+//    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        let app = apps[indexPath.row]
+        var temp: [UsageApps]  = []
+        for usage in usages {
+            if usage.app == app.name {
+                temp.append(usage)
+            }
+        }
+        self.usagesDetail = temp
+        return indexPath
     }
 }
 extension SeleccionarAppsVC: UITableViewDataSource {
