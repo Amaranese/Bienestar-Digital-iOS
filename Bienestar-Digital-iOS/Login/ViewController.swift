@@ -35,8 +35,10 @@ class ViewController: UIViewController {
                 } else {
                     let arrayToken = response.result.value as! [String:Any]
                     let userToken = arrayToken["MESSAGE"]!
+                    let user_id = arrayToken["user_id"]!
                     UserDefaults.standard.set(userToken, forKey: "token")
                     UserDefaults.standard.set(true, forKey: "userLogged")
+                    UserDefaults.standard.set(user_id, forKey: "user_id")
                     
                     let storyBoard = UIStoryboard(name: "Main", bundle:nil)
                     let navVC: UINavigationController

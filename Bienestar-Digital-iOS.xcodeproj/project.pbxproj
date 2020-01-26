@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0E561823DD90A1003C3FA9 /* UsagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */; };
 		2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */; };
 		2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDA23C9E48000D264AC /* AppCell.swift */; };
 		2B23FBDD23C9E55E00D264AC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDC23C9E55E00D264AC /* App.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		1250D4717B2B53B9A2AFBF6B /* Pods-Bienestar-Digital-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOSTests/Pods-Bienestar-Digital-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsagesRequest.swift; sourceTree = "<group>"; };
 		2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionarAppsVC.swift; sourceTree = "<group>"; };
 		2B23FBDA23C9E48000D264AC /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		2B23FBDC23C9E55E00D264AC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */,
+				2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */,
 				2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */,
 				2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */,
+				2B0E561823DD90A1003C3FA9 /* UsagesRequest.swift in Sources */,
 				2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */,
 				2BFC53D323D77C5F00394986 /* UsageRegistration.swift in Sources */,
 				2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */,

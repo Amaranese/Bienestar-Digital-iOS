@@ -7,44 +7,44 @@
 //
 
 import UIKit
+import Alamofire
 
 class SeleccionarAppsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var apps: [Usage] = []
-//    var apps = [
-//        App(nombre: "Whatsapp", image: UIImage(named: "whatsapp")!),
-//        App(nombre: "Instagram", image: UIImage(named: "instagram")!),
-//        App(nombre: "Clock", image: UIImage(named: "clock")!),
-//        App(nombre: "Facebook", image: UIImage(named: "facebook")!),
-//        App(nombre: "Gmail", image: UIImage(named: "gmail")!),
-//        App(nombre: "Chrome", image: UIImage(named: "chrome")!)
-//    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.allowsMultipleSelection = true
-        let lines = self.loadDataCSV()
-        apps = self.loadUsages(lines: lines)
-    }
-    func loadDataCSV() -> [String] {
-        var usages: [String] = []
-        if let path = Bundle.main.path(forResource: "usage", ofType: "csv") {
-            do {
-                let data = try String(contentsOfFile: path, encoding: .utf8)
-                usages = data.components(separatedBy: .newlines)
-            } catch {
-                print(error)
-            }
-        }
-        return usages
-    }
-    func loadUsages(lines: [String]) -> [Usage] {
-        var usages: [Usage] = []
-        for i in 1...lines.count-2 {
-            usages.append(Usage(line: lines[i]))
-        }
-        return usages
+        loadUsages()
     }
     @IBAction func clickContinuar(_ sender: Any) {
+    }
+    private func loadUsages() {
+        let url = "http://localhost:8888/Bienestar/public/index.php/api/usages/list";
+        let userID = UserDefaults.standard.integer(forKey: "user_id")
+        let data = UsagesRequest(user_id: userID)
+        if let parameters = try? data.asDictionary() {
+            Alamofire.request(url,
+                              method: .post,
+                              parameters: parameters,
+                              encoding: JSONEncoding.default,
+                              headers: ["Content-Type": "application/json"]).responseString { [weak self] response in
+                                guard let self = self else { return }
+                                if response.response!.statusCode == 200 {
+                                    if let result = response.result.value {
+                                        let jsonData = result.data(using: .utf8)!
+                                        let usages: [Usage] = try! JSONDecoder().decode([Usage].self, from: jsonData)
+                                        self.updateUsages(usages: usages)
+                                    }
+                                    
+                                }
+            }
+        }
+        
+    }
+    private func updateUsages(usages: [Usage]){
+        self.apps = usages
+        self.tableView.reloadData()
     }
 }
 extension SeleccionarAppsVC: UITableViewDelegate {
