@@ -159,7 +159,6 @@
 				2BCB030923A3A6FC00F64ECE /* LaunchScreen.storyboard */,
 				2BCB030C23A3A6FC00F64ECE /* Info.plist */,
 				2B23FBDA23C9E48000D264AC /* AppCell.swift */,
-				2B23FBDC23C9E55E00D264AC /* App.swift */,
 				2BDCA27323D5D39600FF9089 /* usage.csv */,
 			);
 			path = "Bienestar-Digital-iOS";
@@ -211,6 +210,7 @@
 		2BE8C06223D209780026E1DD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2B23FBDC23C9E55E00D264AC /* App.swift */,
 				2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */,
 				2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */,
 			);

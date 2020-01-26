@@ -11,10 +11,10 @@ import Alamofire
 
 class SeleccionarAppsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var apps: [Usage] = []
+    var usages: [UsageApps] = []
+    var apps: [App] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.allowsMultipleSelection = true
         loadUsages()
     }
     @IBAction func clickContinuar(_ sender: Any) {
@@ -33,7 +33,7 @@ class SeleccionarAppsVC: UIViewController {
                                 if response.response!.statusCode == 200 {
                                     if let result = response.result.value {
                                         let jsonData = result.data(using: .utf8)!
-                                        let usages: [Usage] = try! JSONDecoder().decode([Usage].self, from: jsonData)
+                                        let usages: [UsageApps] = try! JSONDecoder().decode([UsageApps].self, from: jsonData)
                                         self.updateUsages(usages: usages)
                                     }
                                     
@@ -42,8 +42,30 @@ class SeleccionarAppsVC: UIViewController {
         }
         
     }
-    private func updateUsages(usages: [Usage]){
-        self.apps = usages
+    private func updateUsages(usages: [UsageApps]){
+        self.usages = usages
+        for usage in usages {
+            var found = false
+            for app in apps {
+                if usage.app == app.name {
+                    found = true
+                    break
+                }
+            }
+            if !found {
+                var image: UIImage
+                switch usage.app {
+                case "Reloj": image = UIImage(named: "clock")!
+                case "Instagram": image = UIImage(named: "instagram")!
+                case "Whatsapp": image = UIImage(named: "whatsapp")!
+                case "Facebook": image = UIImage(named: "facebook")!
+                case "Gmail": image = UIImage(named: "gmail")!
+                case "Chrome": image = UIImage(named: "chrome")!
+                default: image = UIImage(named: "clock")!
+                }
+                self.apps.append(App(identifier: usage.id, name: usage.app, image: image))
+            }
+        }
         self.tableView.reloadData()
     }
 }
@@ -59,16 +81,8 @@ extension SeleccionarAppsVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let app = apps[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppCell", for: indexPath) as! AppCell
-        cell.tvNombre.text = app.app
-        switch app.app {
-        case "Reloj": cell.ivLogo.image = UIImage(named: "clock")!
-        case "Instagram": cell.ivLogo.image = UIImage(named: "instagram")!
-        case "Whatsapp": cell.ivLogo.image = UIImage(named: "whatsapp")!
-        case "Facebook": cell.ivLogo.image = UIImage(named: "facebook")!
-        case "Gmail": cell.ivLogo.image = UIImage(named: "gmail")!
-        case "Chrome": cell.ivLogo.image = UIImage(named: "chrome")!
-        default: cell.ivLogo.image = UIImage(named: "clock")!
-        }
+        cell.tvNombre.text = app.name
+        cell.ivLogo.image = app.image
         return cell
     }
 }

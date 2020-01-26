@@ -24,3 +24,11 @@ class Usage: Codable {
         self.longitude = Double(fields[4])!
     }
 }
+class UsageApps: Codable {
+    let id: Int
+    let date: String
+    let app: String
+    let event: String
+    let latitude: Double
+    let longitude: Double
+}

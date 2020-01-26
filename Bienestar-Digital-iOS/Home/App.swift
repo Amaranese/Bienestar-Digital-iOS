@@ -9,10 +9,12 @@
 import UIKit
 
 class App {
-    let nombre: String
+    let identifier: Int
+    let name: String
     let image: UIImage
-    init(nombre: String, image: UIImage) {
-        self.nombre = nombre
+    init(identifier: Int, name: String, image: UIImage) {
+        self.identifier = identifier
+        self.name = name
         self.image = image
     }
 }
