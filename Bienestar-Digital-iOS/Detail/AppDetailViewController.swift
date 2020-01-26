@@ -38,7 +38,27 @@ class AppDetailViewController: UIViewController {
         }
         let title = "\(appName) total minutes: \(Int(totalUsage)/60)"
         lbTitle.text = title
+        imIcon.image = Utils.loadImage(appName: appName)
 
         // Do any additional setup after loading the view.
+    }
+}
+
+extension AppDetailViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 32
+    }
+}
+extension AppDetailViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return usages!.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let app = usages![indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UsageCell", for: indexPath) as! UsageCell
+        cell.tvNombre.text = app.app
+        cell.tvType.text = app.event
+        cell.tvDate.text = app.date
+        return cell
     }
 }

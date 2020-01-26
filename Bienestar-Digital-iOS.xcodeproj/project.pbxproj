@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B0E561823DD90A1003C3FA9 /* UsagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */; };
 		2B0E561B23DDA07B003C3FA9 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561A23DDA07B003C3FA9 /* AppDetailViewController.swift */; };
+		2B0E561D23DDAAE9003C3FA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561C23DDAAE9003C3FA9 /* Utils.swift */; };
+		2B0E561F23DDABF9003C3FA9 /* UsageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561E23DDABF9003C3FA9 /* UsageCell.swift */; };
 		2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */; };
 		2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDA23C9E48000D264AC /* AppCell.swift */; };
 		2B23FBDD23C9E55E00D264AC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDC23C9E55E00D264AC /* App.swift */; };
@@ -52,6 +54,8 @@
 		2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsagesRequest.swift; sourceTree = "<group>"; };
 		2B0E561A23DDA07B003C3FA9 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		2B0E561C23DDAAE9003C3FA9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2B0E561E23DDABF9003C3FA9 /* UsageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageCell.swift; sourceTree = "<group>"; };
 		2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionarAppsVC.swift; sourceTree = "<group>"; };
 		2B23FBDA23C9E48000D264AC /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		2B23FBDC23C9E55E00D264AC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0E561A23DDA07B003C3FA9 /* AppDetailViewController.swift */,
+				2B0E561E23DDABF9003C3FA9 /* UsageCell.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -169,8 +174,8 @@
 				2BCB030723A3A6FC00F64ECE /* Assets.xcassets */,
 				2BCB030923A3A6FC00F64ECE /* LaunchScreen.storyboard */,
 				2BCB030C23A3A6FC00F64ECE /* Info.plist */,
-				2B23FBDA23C9E48000D264AC /* AppCell.swift */,
 				2BDCA27323D5D39600FF9089 /* usage.csv */,
+				2B0E561C23DDAAE9003C3FA9 /* Utils.swift */,
 			);
 			path = "Bienestar-Digital-iOS";
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 		2BE8C06223D209780026E1DD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2B23FBDA23C9E48000D264AC /* AppCell.swift */,
 				2B23FBDC23C9E55E00D264AC /* App.swift */,
 				2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */,
 				2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */,
@@ -491,11 +497,13 @@
 				2BFC53D123D76CAC00394986 /* Usage.swift in Sources */,
 				2B0E561B23DDA07B003C3FA9 /* AppDetailViewController.swift in Sources */,
 				2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */,
+				2B0E561D23DDAAE9003C3FA9 /* Utils.swift in Sources */,
 				2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */,
 				2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */,
 				2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */,
 				2B0E561823DD90A1003C3FA9 /* UsagesRequest.swift in Sources */,
 				2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */,
+				2B0E561F23DDABF9003C3FA9 /* UsageCell.swift in Sources */,
 				2BFC53D323D77C5F00394986 /* UsageRegistration.swift in Sources */,
 				2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */,
 			);

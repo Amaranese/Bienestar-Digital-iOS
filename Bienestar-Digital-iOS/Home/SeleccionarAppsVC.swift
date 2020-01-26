@@ -54,16 +54,7 @@ class SeleccionarAppsVC: UIViewController {
                 }
             }
             if !found {
-                var image: UIImage
-                switch usage.app {
-                case "Reloj": image = UIImage(named: "clock")!
-                case "Instagram": image = UIImage(named: "instagram")!
-                case "Whatsapp": image = UIImage(named: "whatsapp")!
-                case "Facebook": image = UIImage(named: "facebook")!
-                case "Gmail": image = UIImage(named: "gmail")!
-                case "Chrome": image = UIImage(named: "chrome")!
-                default: image = UIImage(named: "clock")!
-                }
+                let image: UIImage = Utils.loadImage(appName: usage.app)
                 self.apps.append(App(identifier: usage.id, name: usage.app, image: image))
             }
         }
