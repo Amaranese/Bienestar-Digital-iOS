@@ -102,7 +102,7 @@ class RegisterVC: UIViewController {
                               method: .post,
                               parameters: parameters,
                               encoding: JSONEncoding.default,
-                              headers: ["Content-Type": "application/json"]).responseString { [weak self] response in
+                              headers: ["Content-Type": "application/json"]).responseJSON { [weak self] response in
                                 guard let self = self else { return }
                                 if let result = response.result.value {
                                     let description = response.description
@@ -112,9 +112,9 @@ class RegisterVC: UIViewController {
                                     if statusCode != 200 {
                                     }
                                 }
-                            }
-                        }
-                    }
+            }
+        }
+    }
     func loadDataCSV() -> [String] {
         var usages: [String] = []
         if let path = Bundle.main.path(forResource: "usage", ofType: "csv") {
