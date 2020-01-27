@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class App {
     let identifier: Int
     let name: String

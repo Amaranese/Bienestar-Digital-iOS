@@ -7,9 +7,7 @@
 //
 
 import UIKit
-
 class AppCell: UITableViewCell {
-
     @IBOutlet weak var ivLogo: UIImageView!
     @IBOutlet weak var tvNombre: UILabel!
     override func awakeFromNib() {

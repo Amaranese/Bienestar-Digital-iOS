@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class UsagesRequest: Codable {
     let user_id: Int
     init(user_id: Int) {

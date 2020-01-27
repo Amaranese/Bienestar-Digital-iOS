@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-
 class SeleccionarAppsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var usages: [UsageApps] = []

@@ -7,9 +7,7 @@
 //
 
 import UIKit
-
 class UsageCell: UITableViewCell {
-
     @IBOutlet weak var tvNombre: UILabel!
     @IBOutlet weak var tvType: UILabel!
     @IBOutlet weak var tvDate: UILabel!
