@@ -272,9 +272,6 @@
                                 <state key="normal" title="LogOut">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="logOut:" destination="fuH-4q-b9l" eventType="touchUpInside" id="00X-eg-er0"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3C-2m-xrU">
                                 <rect key="frame" x="116" y="611" width="182" height="35"/>
