@@ -41,7 +41,6 @@ class SeleccionarAppsVC: UIViewController {
                                 }
             }
         }
-        
     }
     private func updateUsages(usages: [UsageApps]){
         self.usages = usages

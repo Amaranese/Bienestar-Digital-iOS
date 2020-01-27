@@ -39,12 +39,10 @@ class ViewController: UIViewController {
                     UserDefaults.standard.set(userToken, forKey: "token")
                     UserDefaults.standard.set(true, forKey: "userLogged")
                     UserDefaults.standard.set(user_id, forKey: "user_id")
-                    
                     let storyBoard = UIStoryboard(name: "Main", bundle:nil)
                     let navVC: UINavigationController
                     navVC = storyBoard.instantiateViewController(withIdentifier: "navigation") as! UINavigationController
                     self.present(navVC, animated: true)
-
                 }
             }
         }

@@ -13,7 +13,6 @@ class UsageCell: UITableViewCell {
     @IBOutlet weak var tvNombre: UILabel!
     @IBOutlet weak var tvType: UILabel!
     @IBOutlet weak var tvDate: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
