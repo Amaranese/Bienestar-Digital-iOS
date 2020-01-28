@@ -286,9 +286,6 @@
                                 <state key="normal" title="Change">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <action selector="editUser:" destination="fuH-4q-b9l" eventType="touchUpInside" id="qg7-WY-r8J"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
