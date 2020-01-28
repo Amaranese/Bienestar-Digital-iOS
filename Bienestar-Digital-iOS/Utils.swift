@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class Utils {
     class func loadImage(appName: String) -> UIImage {
         var image: UIImage

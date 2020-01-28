@@ -77,7 +77,6 @@ class RegisterVC: UIViewController {
                     let user_id = jsonData["user_id"] as! Int
                     let usages = self.loadUsages(lines: self.loadDataCSV())
                     self.registerUsages(userID: user_id, usages: usages)
-                    
                     let alert = UIAlertController(title: "Enhorabuena", message: "Bienvenido a bienestar digital", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
 //                        self.dismiss(animated: true, completion: nil)
