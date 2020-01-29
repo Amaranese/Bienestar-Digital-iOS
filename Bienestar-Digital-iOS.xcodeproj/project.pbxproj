@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B04696923E1EB0A00BF8F24 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04696823E1EB0A00BF8F24 /* MapViewController.swift */; };
 		2B04696B23E1EC5800BF8F24 /* UsageAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04696A23E1EC5800BF8F24 /* UsageAnnotationView.swift */; };
+		2B04696E23E1F59200BF8F24 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04696D23E1F59200BF8F24 /* StatisticsViewController.swift */; };
 		2B0E561823DD90A1003C3FA9 /* UsagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */; };
 		2B0E561B23DDA07B003C3FA9 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561A23DDA07B003C3FA9 /* AppDetailViewController.swift */; };
 		2B0E561D23DDAAE9003C3FA9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0E561C23DDAAE9003C3FA9 /* Utils.swift */; };
@@ -56,6 +57,7 @@
 		2353C03280CD80D1BE78B9AB /* Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests/Pods-Bienestar-Digital-iOS-Bienestar-Digital-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B04696823E1EB0A00BF8F24 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2B04696A23E1EC5800BF8F24 /* UsageAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageAnnotationView.swift; sourceTree = "<group>"; };
+		2B04696D23E1F59200BF8F24 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		2B0E561723DD90A1003C3FA9 /* UsagesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsagesRequest.swift; sourceTree = "<group>"; };
 		2B0E561A23DDA07B003C3FA9 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		2B0E561C23DDAAE9003C3FA9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -141,6 +143,14 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		2B04696C23E1F57C00BF8F24 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				2B04696D23E1F59200BF8F24 /* StatisticsViewController.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
 		2B0E561923DDA05A003C3FA9 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 				2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */,
 				2BFC53CF23D76A9200394986 /* Usage.swift */,
 				2B0E561923DDA05A003C3FA9 /* Detail */,
+				2B04696C23E1F57C00BF8F24 /* Statistics */,
 				2BE8C06223D209780026E1DD /* Home */,
 				2BE8C06123D209410026E1DD /* Recover */,
 				2BE8C06023D209380026E1DD /* Register */,
@@ -513,6 +524,7 @@
 				2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */,
 				2B0E561D23DDAAE9003C3FA9 /* Utils.swift in Sources */,
 				2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */,
+				2B04696E23E1F59200BF8F24 /* StatisticsViewController.swift in Sources */,
 				2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */,
 				2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */,
 				2B0E561823DD90A1003C3FA9 /* UsagesRequest.swift in Sources */,

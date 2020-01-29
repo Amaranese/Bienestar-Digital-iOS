@@ -21,4 +21,20 @@ class Utils {
         }
         return image
     }
+    class func calculateTimeInSeconds(usages: [UsageApps]) -> Double {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        var openDate: Date!
+        var totalUsage: Double = 0
+        for i in 0...usages.count-1 {
+            if i%2 == 0 { //open
+                openDate = dateFormatter.date(from: usages[i].date)!
+            } else { // close
+                let closeDate = dateFormatter.date(from: usages[i].date)!
+                let seconds = openDate.distance(to: closeDate)
+                totalUsage = totalUsage + seconds
+            }
+        }
+        return totalUsage
+    }
 }

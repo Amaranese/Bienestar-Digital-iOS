@@ -15,24 +15,10 @@ class AppDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let appName: String = usages!.first!.app
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        var openDate: Date!
-        var totalUsage: Double = 0
-        for i in 0...usages!.count-1 {
-            if i%2 == 0 { //open
-                openDate = dateFormatter.date(from: usages![i].date)!
-            } else { // close
-                let closeDate = dateFormatter.date(from: usages![i].date)!
-                let seconds = openDate.distance(to: closeDate)
-                totalUsage = totalUsage + seconds
-            }
-        }
+        let totalUsage: Double = Utils.calculateTimeInSeconds(usages: usages!)
         let title = "\(appName) total minutes: \(Int(totalUsage)/60)"
         lbTitle.text = title
         imIcon.image = Utils.loadImage(appName: appName)
-
-        // Do any additional setup after loading the view.
     }
 }
 extension AppDetailViewController: UITableViewDelegate {

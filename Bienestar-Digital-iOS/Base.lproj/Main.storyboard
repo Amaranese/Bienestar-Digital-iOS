@@ -376,7 +376,7 @@
                                         <rect key="frame" x="71" y="0.0" width="64" height="30"/>
                                         <state key="normal" title="Statistics"/>
                                         <connections>
-                                            <segue destination="jQz-d7-ZQe" kind="show" id="pir-zH-CWw"/>
+                                            <segue destination="jQz-d7-ZQe" kind="show" identifier="statisticsSegue" id="pir-zH-CWw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35O-r6-e9e">
@@ -532,23 +532,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tS-8G-A8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-700" y="-1296"/>
+            <point key="canvasLocation" x="-700" y="-1296.4285714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Statistics View Controller-->
         <scene sceneID="NCQ-h6-cDG">
             <objects>
-                <viewController id="jQz-d7-ZQe" sceneMemberID="viewController">
+                <viewController id="jQz-d7-ZQe" customClass="StatisticsViewController" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="50c-lo-7Xn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbk-TA-rzg">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKX-iA-dZx">
+                                <rect key="frame" x="16" y="104" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rKX-iA-dZx" firstAttribute="top" secondItem="RSe-ke-aKa" secondAttribute="top" constant="16" id="3Zi-gj-BFQ"/>
+                            <constraint firstItem="RSe-ke-aKa" firstAttribute="trailing" secondItem="rKX-iA-dZx" secondAttribute="trailing" constant="16" id="4wj-Fg-DPx"/>
+                            <constraint firstItem="Pbk-TA-rzg" firstAttribute="leading" secondItem="RSe-ke-aKa" secondAttribute="leading" id="GGn-sz-c0T"/>
+                            <constraint firstItem="Pbk-TA-rzg" firstAttribute="trailing" secondItem="RSe-ke-aKa" secondAttribute="trailing" id="UhR-af-QnZ"/>
+                            <constraint firstItem="RSe-ke-aKa" firstAttribute="bottom" secondItem="Pbk-TA-rzg" secondAttribute="bottom" id="Zlt-dQ-8YT"/>
+                            <constraint firstItem="rKX-iA-dZx" firstAttribute="leading" secondItem="RSe-ke-aKa" secondAttribute="leading" constant="16" id="dHb-me-ACy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RSe-ke-aKa"/>
                     </view>
                     <navigationItem key="navigationItem" id="VJI-gh-3jh"/>
+                    <connections>
+                        <outlet property="lbTiempos" destination="rKX-iA-dZx" id="A2S-de-ZBd"/>
+                        <outlet property="selector" destination="Pbk-TA-rzg" id="YMt-zU-3vi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stE-C5-ca5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="204" y="-1296"/>
+            <point key="canvasLocation" x="202.89855072463769" y="-1296.4285714285713"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="UUP-82-dLg">
