@@ -390,7 +390,7 @@
                                         <rect key="frame" x="213" y="0.0" width="30" height="30"/>
                                         <state key="normal" title="Map"/>
                                         <connections>
-                                            <segue destination="xjp-io-IBp" kind="show" id="YxQ-IC-83E"/>
+                                            <segue destination="xjp-io-IBp" kind="show" identifier="mapSegue" id="YxQ-IC-83E"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -550,10 +550,10 @@
             </objects>
             <point key="canvasLocation" x="204" y="-1296"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="UUP-82-dLg">
             <objects>
-                <viewController id="xjp-io-IBp" sceneMemberID="viewController">
+                <viewController id="xjp-io-IBp" customClass="MapViewController" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wd1-MK-GX1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -572,6 +572,9 @@
                         <viewLayoutGuide key="safeArea" id="1BC-JL-Cpg"/>
                     </view>
                     <navigationItem key="navigationItem" id="wkw-PH-wkY"/>
+                    <connections>
+                        <outlet property="mapView" destination="oDe-2R-VGq" id="yu1-0u-F1P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4o-ul-f8Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

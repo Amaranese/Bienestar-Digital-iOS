@@ -62,6 +62,9 @@ class SeleccionarAppsVC: UIViewController {
         if (segue.identifier == "appDetailSegue") {
             let vc = segue.destination as! AppDetailViewController
             vc.usages = usagesDetail
+        } else if (segue.identifier == "mapSegue") {
+            let vc = segue.destination as! MapViewController
+            vc.usages = usages
         }
     }
 }
