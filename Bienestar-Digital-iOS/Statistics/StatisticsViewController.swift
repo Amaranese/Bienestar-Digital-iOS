@@ -33,7 +33,6 @@ class StatisticsViewController: UIViewController {
                 appsNames.append(usage.app)
             }
         }
-        
         //Se busca los UsageApps de todas las apps y se agrupan
         for appName in appsNames {
             apps[appName] = usages.filter { $0.app == appName }
