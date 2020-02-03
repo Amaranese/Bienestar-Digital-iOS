@@ -26,30 +26,25 @@ class RegisterVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func userRegister(_ sender: UIButton) {
-        if textFieldUsuario.text! == "" || textFieldEmail.text! == "" || textFieldPassword.text! == "" || textFieldRepeatPassword.text! == ""{
-            let alert = UIAlertController(title: "Error", message: "Has de rellenar todos los campos" as! String, preferredStyle: .alert)
+        if Utils.validateEmptyFields(fields: [textFieldUsuario.text!, textFieldEmail.text!, textFieldPassword.text!, textFieldRepeatPassword.text!]) {
+            let alert = UIAlertController(title: "Error", message: "Has de rellenar todos los campos", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
-        } else if !validateEmail(enteredEmail: textFieldEmail.text!) {
-            let alert = UIAlertController(title: "Error", message: "El email no ha sido escrito de forma correcta" as! String, preferredStyle: .alert)
+        } else if !Utils.validateEmail(enteredEmail: textFieldEmail.text!) {
+            let alert = UIAlertController(title: "Error", message: "El email no ha sido escrito de forma correcta", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         } else if textFieldPassword.text!.count < 8{
-            let alert = UIAlertController(title: "Error", message: "La contraseña ha de tener un minimo de 8 caracteres" as! String, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "La contraseña ha de tener un minimo de 8 caracteres", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         } else if textFieldPassword.text != textFieldRepeatPassword.text {
-            let alert = UIAlertController(title: "Error", message: "La contraseña de confirmación es incorrecta" as! String, preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "La contraseña de confirmación es incorrecta", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         } else {
             register()
         }
-    }
-    func validateEmail(enteredEmail:String) -> Bool {
-        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
-        return emailPredicate.evaluate(with: enteredEmail)
     }
     func register() {
         let url = "http://localhost:8888/Bienestar/public/index.php/api/user";

@@ -18,6 +18,7 @@
 		2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDA23C9E48000D264AC /* AppCell.swift */; };
 		2B23FBDD23C9E55E00D264AC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDC23C9E55E00D264AC /* App.swift */; };
 		2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B593D5523A8D02200656FC4 /* EditUserVC.swift */; };
+		2B73052A23E8660E008B0404 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73052923E8660E008B0404 /* User.swift */; };
 		2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21123A77F94002EC3AE /* RegisterVC.swift */; };
 		2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21323A78435002EC3AE /* RecoverVC.swift */; };
 		2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */; };
@@ -66,6 +67,7 @@
 		2B23FBDA23C9E48000D264AC /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		2B23FBDC23C9E55E00D264AC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		2B593D5523A8D02200656FC4 /* EditUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserVC.swift; sourceTree = "<group>"; };
+		2B73052923E8660E008B0404 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2B80A21123A77F94002EC3AE /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		2B80A21323A78435002EC3AE /* RecoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverVC.swift; sourceTree = "<group>"; };
 		2BCB02FB23A3A6FC00F64ECE /* Bienestar-Digital-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bienestar-Digital-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				2B593D5523A8D02200656FC4 /* EditUserVC.swift */,
+				2B73052923E8660E008B0404 /* User.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */,
 				2B0E561F23DDABF9003C3FA9 /* UsageCell.swift in Sources */,
 				2BFC53D323D77C5F00394986 /* UsageRegistration.swift in Sources */,
+				2B73052A23E8660E008B0404 /* User.swift in Sources */,
 				2B04696923E1EB0A00BF8F24 /* MapViewController.swift in Sources */,
 				2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */,
 				2B04696B23E1EC5800BF8F24 /* UsageAnnotationView.swift in Sources */,
