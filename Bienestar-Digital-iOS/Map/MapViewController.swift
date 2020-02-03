@@ -8,25 +8,17 @@
 
 import UIKit
 import MapKit
-
 class MapViewController: UIViewController {
-
     @IBOutlet weak var mapView: MKMapView!
-    
     var usages: [UsageApps]! = nil
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         for usage in usages {
             let annotation = UsageAnnotation(title: usage.app, subtitle: usage.event, coordinate: CLLocationCoordinate2DMake(usage.latitude, usage.longitude))
             mapView.addAnnotation(annotation)
             print("lat lang: \(usage.latitude), \(usage.longitude)")
         }
-
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -36,5 +28,4 @@ class MapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

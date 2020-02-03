@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 /*
 {
     "user_id": 2,

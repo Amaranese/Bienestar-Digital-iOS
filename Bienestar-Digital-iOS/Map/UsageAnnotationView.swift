@@ -8,7 +8,6 @@
 
 import UIKit
 import MapKit
-
 class UsageAnnotation: NSObject, MKAnnotation {
     let title: String?
     let subtitle: String?

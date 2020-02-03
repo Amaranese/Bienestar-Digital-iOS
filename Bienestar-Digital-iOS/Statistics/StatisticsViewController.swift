@@ -12,9 +12,7 @@ enum Rango: Int {
     case semanal = 7
     case mensual = 31
 }
-
 class StatisticsViewController: UIViewController {
-
     @IBOutlet weak var lbTiempos: UILabel!
     @IBOutlet weak var selector: UIPickerView!
     var usages: [UsageApps]! = nil
