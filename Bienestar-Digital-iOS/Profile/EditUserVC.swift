@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import Alamofire
 class EditUserVC: UIViewController {
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var newName: UITextField!
     @IBOutlet weak var newemail: UITextField!
     @IBOutlet weak var oldPassword: UITextField!
@@ -37,12 +39,13 @@ class EditUserVC: UIViewController {
         }
     }
     private func refreshProfile(_ user: User){
-        newName.text = user.name
-        newemail.text = user.email
+        userName.text = user.name
+        userEmail.text = user.email
     }
     private func updateProfile(){
-        if Utils.validateEmptyFields(fields: [newName.text!, newemail.text!]) {
-            let alert = UIAlertController(title: "Error", message: "The name or the email fields cannot be empty", preferredStyle: .alert)
+        //if (empty($request->name) && empty($request->email) && empty($request->newPassword))
+        if newName.text!.isEmpty && newemail.text!.isEmpty && newpass.text!.isEmpty {
+            let alert = UIAlertController(title: "Error", message: "You have to fill at least one field: email or new email or new password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         } else if !Utils.validateEmail(enteredEmail: newemail.text!) {
