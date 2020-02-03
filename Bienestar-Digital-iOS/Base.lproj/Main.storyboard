@@ -306,18 +306,24 @@
                                         <rect key="frame" x="0.0" y="0.0" width="286" height="35"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="LogOut">
+                                        <state key="normal" title="Logout">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logout:" destination="fuH-4q-b9l" eventType="touchUpInside" id="j47-mC-f84"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3C-2m-xrU">
                                         <rect key="frame" x="0.0" y="65" width="286" height="35"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <state key="normal" title="Change">
+                                        <state key="normal" title="Update profile">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="updateProfile:" destination="fuH-4q-b9l" eventType="touchUpInside" id="kjL-Dp-8V2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

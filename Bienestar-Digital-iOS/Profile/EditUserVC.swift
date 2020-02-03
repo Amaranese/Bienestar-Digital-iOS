@@ -22,6 +22,15 @@ class EditUserVC: UIViewController {
         super.viewDidLoad()
         loadProfile()
     }
+    
+    @IBAction func logout(_ sender: Any) {
+    }
+    
+    @IBAction func updateProfile(_ sender: Any) {
+        updateProfile()
+    }
+    
+    
     private func loadProfile() {
         let userID = UserDefaults.standard.integer(forKey: "user_id")
         let token = UserDefaults.standard.string(forKey: "token")!
@@ -45,15 +54,22 @@ class EditUserVC: UIViewController {
     private func updateProfile(){
         //if (empty($request->name) && empty($request->email) && empty($request->newPassword))
         if newName.text!.isEmpty && newemail.text!.isEmpty && newpass.text!.isEmpty {
-            let alert = UIAlertController(title: "Error", message: "You have to fill at least one field: email or new email or new password", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message: "You have to fill at least one field: new name or new email or new password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
-        } else if !Utils.validateEmail(enteredEmail: newemail.text!) {
+        }
+        
+        if !newemail.text!.isEmpty && !Utils.validateEmail(enteredEmail: newemail.text!) {
             let alert = UIAlertController(title: "Error", message: "El email no ha sido escrito de forma correcta", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
         
+        if !newpass.text!.isEmpty && (repeatnewpass.text!.isEmpty || oldPassword.text!.isEmpty) {
+            let alert = UIAlertController(title: "Error", message: "You have to fill at password fields", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
     
 }
