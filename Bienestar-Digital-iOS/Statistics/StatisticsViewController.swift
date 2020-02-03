@@ -5,7 +5,6 @@
 //  Created by Alejandro Marañés on 29/01/2020.
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
-
 import UIKit
 enum Rango: Int {
     case diario = 1
@@ -18,12 +17,10 @@ class StatisticsViewController: UIViewController {
     var usages: [UsageApps]! = nil
     let pickerData = ["Diario", "Semanal", "Mensual"]
     var apps = [String: [UsageApps]]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.selector.delegate = self
         self.selector.dataSource = self
-        
         //se bucan los nombres de todas las apps
         var appsNames: [String] = []
         for usage in usages {

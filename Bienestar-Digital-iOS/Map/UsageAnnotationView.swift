@@ -5,7 +5,6 @@
 //  Created by Alejandro Marañés on 29/01/2020.
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
-
 import UIKit
 import MapKit
 class UsageAnnotation: NSObject, MKAnnotation {
@@ -18,5 +17,4 @@ class UsageAnnotation: NSObject, MKAnnotation {
         self.coordinate = coordinate
         super.init()
     }
-
 }

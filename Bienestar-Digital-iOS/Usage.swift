@@ -5,9 +5,7 @@
 //  Created by Alejandro Marañés on 21/01/2020.
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
-
 import UIKit
-
 //Date,App,Event,Latitude,Longitude
 class Usage: Codable {
     let date: String

@@ -5,7 +5,6 @@
 //  Created by Alejandro Marañés on 26/01/2020.
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
-
 import UIKit
 class UsageCell: UITableViewCell {
     @IBOutlet weak var tvNombre: UILabel!
@@ -17,8 +16,6 @@ class UsageCell: UITableViewCell {
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-
 }

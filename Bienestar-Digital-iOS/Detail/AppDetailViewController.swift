@@ -5,7 +5,6 @@
 //  Created by Alejandro Marañés on 26/01/2020.
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
-
 import UIKit
 class AppDetailViewController: UIViewController {
     var usages: [UsageApps]? = nil
