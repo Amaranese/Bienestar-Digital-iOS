@@ -17,7 +17,6 @@
  */
 
 import UIKit
-
 struct User: Codable {
     let id: Int
     let name: String
