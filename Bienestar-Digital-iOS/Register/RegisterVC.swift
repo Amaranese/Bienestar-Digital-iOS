@@ -26,7 +26,7 @@ class RegisterVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func userRegister(_ sender: UIButton) {
-        if Utils.validateEmptyFields(fields: [textFieldUsuario.text!, textFieldEmail.text!, textFieldPassword.text!, textFieldRepeatPassword.text!]) {
+        if textFieldUsuario.text! == "" || textFieldEmail.text! == "" || textFieldPassword.text! == "" || textFieldRepeatPassword.text! == ""{
             let alert = UIAlertController(title: "Error", message: "Has de rellenar todos los campos", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
