@@ -224,14 +224,40 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ef2-so-eSy">
+                                <rect key="frame" x="102" y="640" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKm-WC-Ug9">
+                                <rect key="frame" x="159" y="645" width="96.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ut-bc-Kds">
+                                <rect key="frame" x="89.5" y="692.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4p-NK-bvv">
+                                <rect key="frame" x="146.5" y="697.5" width="121.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VDq-II-Qzu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-64" id="0mC-RJ-7ti"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDq-II-Qzu" secondAttribute="trailing" constant="32" id="Jpk-K0-d01"/>
+                            <constraint firstItem="K4p-NK-bvv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rj8-h4-oCw"/>
+                            <constraint firstItem="VKm-WC-Ug9" firstAttribute="leading" secondItem="Ef2-so-eSy" secondAttribute="trailing" constant="8" id="SIn-wZ-eIC"/>
+                            <constraint firstItem="VKm-WC-Ug9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ziz-a4-1AP"/>
+                            <constraint firstItem="Ef2-so-eSy" firstAttribute="centerY" secondItem="VKm-WC-Ug9" secondAttribute="centerY" id="af2-h1-Exa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sCc-Ce-UKK" secondAttribute="trailing" constant="64" id="d68-3S-30x"/>
                             <constraint firstItem="VDq-II-Qzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="dY6-xn-rGN"/>
                             <constraint firstItem="sCc-Ce-UKK" firstAttribute="top" secondItem="VDq-II-Qzu" secondAttribute="bottom" constant="64" id="e1m-s7-As5"/>
+                            <constraint firstItem="K4p-NK-bvv" firstAttribute="leading" secondItem="4Ut-bc-Kds" secondAttribute="trailing" constant="8" id="eX1-QR-dJ9"/>
+                            <constraint firstItem="VKm-WC-Ug9" firstAttribute="top" secondItem="sCc-Ce-UKK" secondAttribute="bottom" constant="32" id="hQV-bR-KxJ"/>
+                            <constraint firstItem="4Ut-bc-Kds" firstAttribute="centerY" secondItem="K4p-NK-bvv" secondAttribute="centerY" id="iuf-a5-yAt"/>
+                            <constraint firstItem="K4p-NK-bvv" firstAttribute="top" secondItem="VKm-WC-Ug9" secondAttribute="bottom" constant="32" id="oIL-0l-PFY"/>
                             <constraint firstItem="sCc-Ce-UKK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="q8X-C4-H5Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -418,7 +444,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="54" height="30"/>
                                         <state key="normal" title="Controll"/>
                                         <connections>
-                                            <segue destination="l2v-Ql-gmL" kind="show" id="vsi-up-CW3"/>
+                                            <segue destination="l2v-Ql-gmL" kind="show" identifier="controlSegue" id="vsi-up-CW3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diX-Ju-NqW">
@@ -567,17 +593,48 @@
             </objects>
             <point key="canvasLocation" x="2635" y="-544"/>
         </scene>
-        <!--View Controller-->
+        <!--Control View Controller-->
         <scene sceneID="eVX-uU-mm4">
             <objects>
-                <viewController id="l2v-Ql-gmL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ControlViewController" id="l2v-Ql-gmL" customClass="ControlViewController" customModule="Bienestar_Digital_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pE8-PG-MaX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGM-j4-MdS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="216"/>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tiempo máximo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3G-6u-MDY">
+                                <rect key="frame" x="32" y="320" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lg4-cw-1f9">
+                                <rect key="frame" x="190" y="816" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="l2v-Ql-gmL" eventType="touchUpInside" id="VhT-34-ac9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eGM-j4-MdS" firstAttribute="top" secondItem="2HY-0k-amy" secondAttribute="top" id="8ns-x2-7zJ"/>
+                            <constraint firstItem="2HY-0k-amy" firstAttribute="trailing" secondItem="h3G-6u-MDY" secondAttribute="trailing" constant="32" id="Btr-ff-zcl"/>
+                            <constraint firstItem="Lg4-cw-1f9" firstAttribute="centerX" secondItem="pE8-PG-MaX" secondAttribute="centerX" id="DC0-LP-AqP"/>
+                            <constraint firstItem="eGM-j4-MdS" firstAttribute="leading" secondItem="2HY-0k-amy" secondAttribute="leading" id="DnQ-vJ-pef"/>
+                            <constraint firstItem="h3G-6u-MDY" firstAttribute="leading" secondItem="2HY-0k-amy" secondAttribute="leading" constant="32" id="HV1-oE-NHh"/>
+                            <constraint firstItem="h3G-6u-MDY" firstAttribute="top" secondItem="eGM-j4-MdS" secondAttribute="bottom" constant="16" id="bAo-fr-tko"/>
+                            <constraint firstItem="2HY-0k-amy" firstAttribute="bottom" secondItem="Lg4-cw-1f9" secondAttribute="bottom" constant="16" id="cQ2-tc-sX2"/>
+                            <constraint firstItem="eGM-j4-MdS" firstAttribute="trailing" secondItem="2HY-0k-amy" secondAttribute="trailing" id="uEk-dG-YGL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2HY-0k-amy"/>
                     </view>
                     <navigationItem key="navigationItem" id="tAu-wU-IX9"/>
+                    <connections>
+                        <outlet property="maxtime" destination="h3G-6u-MDY" id="8Ab-Jv-wZf"/>
+                        <outlet property="picker" destination="eGM-j4-MdS" id="uCF-jj-1Fl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1tS-8G-A8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

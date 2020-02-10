@@ -20,6 +20,7 @@
 		2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B593D5523A8D02200656FC4 /* EditUserVC.swift */; };
 		2B73052A23E8660E008B0404 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73052923E8660E008B0404 /* User.swift */; };
 		2B7DBE2A23F1EB06008DE7FA /* UpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DBE2923F1EB06008DE7FA /* UpdateUser.swift */; };
+		2B7DBE2D23F20589008DE7FA /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DBE2C23F20589008DE7FA /* ControlViewController.swift */; };
 		2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21123A77F94002EC3AE /* RegisterVC.swift */; };
 		2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21323A78435002EC3AE /* RecoverVC.swift */; };
 		2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */; };
@@ -70,6 +71,7 @@
 		2B593D5523A8D02200656FC4 /* EditUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserVC.swift; sourceTree = "<group>"; };
 		2B73052923E8660E008B0404 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2B7DBE2923F1EB06008DE7FA /* UpdateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUser.swift; sourceTree = "<group>"; };
+		2B7DBE2C23F20589008DE7FA /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		2B80A21123A77F94002EC3AE /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		2B80A21323A78435002EC3AE /* RecoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverVC.swift; sourceTree = "<group>"; };
 		2BCB02FB23A3A6FC00F64ECE /* Bienestar-Digital-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bienestar-Digital-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		2B7DBE2B23F2056F008DE7FA /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				2B7DBE2C23F20589008DE7FA /* ControlViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		2BCB02F223A3A6FC00F64ECE = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +199,7 @@
 		2BCB02FD23A3A6FC00F64ECE /* Bienestar-Digital-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2B7DBE2B23F2056F008DE7FA /* Control */,
 				2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */,
 				2BFC53CF23D76A9200394986 /* Usage.swift */,
 				2B0E561923DDA05A003C3FA9 /* Detail */,
@@ -541,6 +552,7 @@
 				2B73052A23E8660E008B0404 /* User.swift in Sources */,
 				2B04696923E1EB0A00BF8F24 /* MapViewController.swift in Sources */,
 				2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */,
+				2B7DBE2D23F20589008DE7FA /* ControlViewController.swift in Sources */,
 				2B04696B23E1EC5800BF8F24 /* UsageAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

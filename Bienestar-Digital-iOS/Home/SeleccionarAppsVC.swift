@@ -67,6 +67,9 @@ class SeleccionarAppsVC: UIViewController {
         } else if (segue.identifier == "statisticsSegue") {
             let vc = segue.destination as! StatisticsViewController
             vc.usages = usages
+        } else if (segue.identifier == "controlSegue") {
+            let vc = segue.destination as! ControlViewController
+            vc.apps = apps
         }
     }
 }
