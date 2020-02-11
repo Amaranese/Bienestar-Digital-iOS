@@ -23,6 +23,7 @@
 		2B7DBE2D23F20589008DE7FA /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DBE2C23F20589008DE7FA /* ControlViewController.swift */; };
 		2B80A21223A77F94002EC3AE /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21123A77F94002EC3AE /* RegisterVC.swift */; };
 		2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B80A21323A78435002EC3AE /* RecoverVC.swift */; };
+		2B87A83423F33E8900DEEE19 /* ControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B87A83323F33E8900DEEE19 /* ControlApp.swift */; };
 		2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */; };
 		2BCB030323A3A6FC00F64ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCB030223A3A6FC00F64ECE /* ViewController.swift */; };
 		2BCB030623A3A6FC00F64ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BCB030423A3A6FC00F64ECE /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		2B7DBE2C23F20589008DE7FA /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		2B80A21123A77F94002EC3AE /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		2B80A21323A78435002EC3AE /* RecoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverVC.swift; sourceTree = "<group>"; };
+		2B87A83323F33E8900DEEE19 /* ControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlApp.swift; sourceTree = "<group>"; };
 		2BCB02FB23A3A6FC00F64ECE /* Bienestar-Digital-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bienestar-Digital-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BCB02FE23A3A6FC00F64ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BCB030223A3A6FC00F64ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				2B7DBE2C23F20589008DE7FA /* ControlViewController.swift */,
+				2B87A83323F33E8900DEEE19 /* ControlApp.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				2B04696923E1EB0A00BF8F24 /* MapViewController.swift in Sources */,
 				2B80A21423A78435002EC3AE /* RecoverVC.swift in Sources */,
 				2B7DBE2D23F20589008DE7FA /* ControlViewController.swift in Sources */,
+				2B87A83423F33E8900DEEE19 /* ControlApp.swift in Sources */,
 				2B04696B23E1EC5800BF8F24 /* UsageAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
