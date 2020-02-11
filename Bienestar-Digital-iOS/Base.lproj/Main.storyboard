@@ -224,40 +224,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ef2-so-eSy">
-                                <rect key="frame" x="102" y="640" width="51" height="31"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKm-WC-Ug9">
-                                <rect key="frame" x="159" y="645" width="96.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ut-bc-Kds">
-                                <rect key="frame" x="89.5" y="692.5" width="51" height="31"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4p-NK-bvv">
-                                <rect key="frame" x="146.5" y="697.5" width="121.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VDq-II-Qzu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-64" id="0mC-RJ-7ti"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDq-II-Qzu" secondAttribute="trailing" constant="32" id="Jpk-K0-d01"/>
-                            <constraint firstItem="K4p-NK-bvv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rj8-h4-oCw"/>
-                            <constraint firstItem="VKm-WC-Ug9" firstAttribute="leading" secondItem="Ef2-so-eSy" secondAttribute="trailing" constant="8" id="SIn-wZ-eIC"/>
-                            <constraint firstItem="VKm-WC-Ug9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ziz-a4-1AP"/>
-                            <constraint firstItem="Ef2-so-eSy" firstAttribute="centerY" secondItem="VKm-WC-Ug9" secondAttribute="centerY" id="af2-h1-Exa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sCc-Ce-UKK" secondAttribute="trailing" constant="64" id="d68-3S-30x"/>
                             <constraint firstItem="VDq-II-Qzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="dY6-xn-rGN"/>
                             <constraint firstItem="sCc-Ce-UKK" firstAttribute="top" secondItem="VDq-II-Qzu" secondAttribute="bottom" constant="64" id="e1m-s7-As5"/>
-                            <constraint firstItem="K4p-NK-bvv" firstAttribute="leading" secondItem="4Ut-bc-Kds" secondAttribute="trailing" constant="8" id="eX1-QR-dJ9"/>
-                            <constraint firstItem="VKm-WC-Ug9" firstAttribute="top" secondItem="sCc-Ce-UKK" secondAttribute="bottom" constant="32" id="hQV-bR-KxJ"/>
-                            <constraint firstItem="4Ut-bc-Kds" firstAttribute="centerY" secondItem="K4p-NK-bvv" secondAttribute="centerY" id="iuf-a5-yAt"/>
-                            <constraint firstItem="K4p-NK-bvv" firstAttribute="top" secondItem="VKm-WC-Ug9" secondAttribute="bottom" constant="32" id="oIL-0l-PFY"/>
                             <constraint firstItem="sCc-Ce-UKK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="q8X-C4-H5Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
