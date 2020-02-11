@@ -6,6 +6,8 @@
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
 import UIKit
+//Al iniciar la pantalla se carga los usos de una app
+//Se agrupan los usos por nombre de app para calcular su tiempo en diario, mensual y semanal
 enum Rango: Int {
     case diario = 1
     case semanal = 7

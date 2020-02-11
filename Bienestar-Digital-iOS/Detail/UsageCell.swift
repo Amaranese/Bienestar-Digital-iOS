@@ -5,6 +5,7 @@
 //  Created by Alejandro Marañés on 26/01/2020.
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
+//la celda que se mostrara en el tableview de detail
 import UIKit
 class UsageCell: UITableViewCell {
     @IBOutlet weak var tvNombre: UILabel!

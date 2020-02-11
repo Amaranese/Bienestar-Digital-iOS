@@ -15,7 +15,7 @@
      "updated_at": "2020-02-03 13:01:48"
  }
  */
-
+//datao para el servicio http://localhost:8888/Bienestar/public/index.php/api/user/\(userID)
 import UIKit
 struct User: Codable {
     let id: Int

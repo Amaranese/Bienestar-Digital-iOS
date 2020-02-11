@@ -6,6 +6,7 @@
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
 import UIKit
+//Clase que representa la app en la tabla de la pantalla de la home
 class App {
     let identifier: Int
     let name: String

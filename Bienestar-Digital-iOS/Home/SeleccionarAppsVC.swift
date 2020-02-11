@@ -7,6 +7,9 @@
 //
 import UIKit
 import Alamofire
+//pantalla de la home, que al iniciar consulta el servicio /usages/list
+//la navegacion a otras pantallas es mediante segue
+//se intercepta el segue y se pasan los datos requeridos por cada nueva pantalla(viewcontroller)
 class SeleccionarAppsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var usages: [UsageApps] = []

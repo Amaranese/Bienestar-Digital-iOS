@@ -6,6 +6,8 @@
 //  Copyright © 2020 Alejandro Marañés. All rights reserved.
 //
 import UIKit
+//esta pantalla al iniciar recive el uso de una app en la variavle "usages"
+//y se usa el tableview para mostrarlo
 class AppDetailViewController: UIViewController {
     var usages: [UsageApps]? = nil
     @IBOutlet weak var tableView: UITableView!

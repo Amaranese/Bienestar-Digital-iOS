@@ -7,6 +7,7 @@
 //
 import UIKit
 //Date,App,Event,Latitude,Longitude
+//Class que permite definir el tipo Usage para los datos del servidor(los que se cargarons desde el excel la primera vez)
 class Usage: Codable {
     let date: String
     let app: String

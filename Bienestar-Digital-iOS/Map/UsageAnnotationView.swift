@@ -7,6 +7,7 @@
 //
 import UIKit
 import MapKit
+//Clase para pintar en el mapa
 class UsageAnnotation: NSObject, MKAnnotation {
     let title: String?
     let subtitle: String?

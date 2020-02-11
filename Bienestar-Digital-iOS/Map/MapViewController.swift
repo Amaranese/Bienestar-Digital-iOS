@@ -7,6 +7,7 @@
 //
 import UIKit
 import MapKit
+//Al inicarse la pantalla pinta en el mapa los usos de la variable "usages"
 class MapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     var usages: [UsageApps]! = nil

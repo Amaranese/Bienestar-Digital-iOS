@@ -5,7 +5,12 @@
 //  Created by Alejandro Marañés on 17/12/2019.
 //  Copyright © 2019 Alejandro Marañés. All rights reserved.
 //
-
+//Esta pantala permite editar la información del usuario
+//Solo se puede actualizar una cosa a la vez:
+//1. el nombre
+//2. el correo
+//3. nueva contraseña
+// para todas las operaciones el servicio es PUT http://localhost:8888/Bienestar/public/index.php/api/user/\(userID)
 import Foundation
 import UIKit
 import Alamofire

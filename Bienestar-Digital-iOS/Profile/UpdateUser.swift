@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//struct para el servicio http://localhost:8888/Bienestar/public/index.php/api/user/\(userID)
 struct UpdateUser: Codable {
     let email: String?
     let name: String?

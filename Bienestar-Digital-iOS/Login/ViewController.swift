@@ -7,6 +7,8 @@
 //
 import UIKit
 import Alamofire
+//Pantalla de login que usa el servicio "login"
+//Se solicuta al usuario permiso de recibir notificaciones si hiciera falta
 class ViewController: UIViewController {
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!

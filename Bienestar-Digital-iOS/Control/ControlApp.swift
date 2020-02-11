@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Structs para usar en los servicios de control de tiempo de las apps
 struct ControlAppConsulta: Codable {
     let user_id: Int
     let app_name: String

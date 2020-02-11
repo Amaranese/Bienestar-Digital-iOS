@@ -5,6 +5,8 @@
 //  Created by Alejandro Marañés on 16/12/2019.
 //  Copyright © 2019 Alejandro Marañés. All rights reserved.
 //
+//Esta pantalla permite el registro de un usuario mediante el servicio POST /user
+//Si el registro se realiza con éxito entonces también se se envia los datos del CSV mediante el servicio "usagesRegistration"
 import Foundation
 import Alamofire
 class RegisterVC: UIViewController {

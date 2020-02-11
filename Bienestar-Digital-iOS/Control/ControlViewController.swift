@@ -8,7 +8,8 @@
 
 import UIKit
 import Alamofire
-
+//Al iniciar la pantalla se consulta el servicio control/read
+//Para guardar un tiempo maximo se usa el servicio control/update
 class ControlViewController: UIViewController {
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var maxtime: UITextField!

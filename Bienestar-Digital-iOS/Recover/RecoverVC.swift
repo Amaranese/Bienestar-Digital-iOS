@@ -5,6 +5,7 @@
 //  Created by Alejandro Marañés on 16/12/2019.
 //  Copyright © 2019 Alejandro Marañés. All rights reserved.
 //
+//Pantalla para recuperar contrasela mediante el servicio "recover"
 import Foundation
 import Alamofire
 class RecoverVC: UIViewController {
