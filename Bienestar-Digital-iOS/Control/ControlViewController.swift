@@ -14,6 +14,7 @@ class ControlViewController: UIViewController {
     @IBOutlet weak var maxtime: UITextField!
     
     var apps: [App]!
+    private var appSelected = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,30 @@ class ControlViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func save(_ sender: UIButton) {
-        
+        if let maxTimeInMinutes = Int(maxtime.text!), appSelected.count > 0 {
+            saveMaxTime(appName: appSelected, maxTime: maxTimeInMinutes)
+        }
+    }
+    private func saveMaxTime(appName: String, maxTime: Int){
+        let token = UserDefaults.standard.string(forKey: "token")!
+        let userID = UserDefaults.standard.integer(forKey: "user_id")
+        let url = "http://localhost:8888/Bienestar/public/index.php/api/control/update";
+        let data = ControlAppActualizacion(user_id: userID, app_name: appName, max_time: maxTime)
+        if let parameters = try? data.asDictionary() {
+            Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default,
+                              headers: ["Content-Type": "application/json", "Authorization": token]).responseString { [weak self] response in
+                                guard let self = self else { return }
+                                if response.response!.statusCode == 200 {
+                                    let alert = UIAlertController(title: "Success", message: "Max time updated", preferredStyle: .alert)
+                                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                                    self.present(alert, animated: true)
+                                } else {
+                                    let alert = UIAlertController(title: "Error", message: "Error updating max time", preferredStyle: .alert)
+                                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                                    self.present(alert, animated: true)
+                                }
+            }
+        }
     }
     
     private func loadMaxTime(appName: String) {
@@ -55,7 +79,8 @@ extension ControlViewController: UIPickerViewDelegate {
         return apps[row].name
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        loadMaxTime(appName: apps[row].name)
+        appSelected = apps[row].name
+        loadMaxTime(appName: appSelected)
     }
 }
 extension ControlViewController: UIPickerViewDataSource {

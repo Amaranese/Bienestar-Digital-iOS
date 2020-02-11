@@ -609,9 +609,9 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="216"/>
                             </pickerView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tiempo máximo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3G-6u-MDY">
-                                <rect key="frame" x="32" y="320" width="350" height="34"/>
+                                <rect key="frame" x="32" y="320" width="265" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="postal-code"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lg4-cw-1f9">
                                 <rect key="frame" x="190" y="816" width="34" height="30"/>
@@ -620,16 +620,24 @@
                                     <action selector="save:" destination="l2v-Ql-gmL" eventType="touchUpInside" id="VhT-34-ac9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMS-Pm-F4P">
+                                <rect key="frame" x="305" y="326.5" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="eGM-j4-MdS" firstAttribute="top" secondItem="2HY-0k-amy" secondAttribute="top" id="8ns-x2-7zJ"/>
-                            <constraint firstItem="2HY-0k-amy" firstAttribute="trailing" secondItem="h3G-6u-MDY" secondAttribute="trailing" constant="32" id="Btr-ff-zcl"/>
                             <constraint firstItem="Lg4-cw-1f9" firstAttribute="centerX" secondItem="pE8-PG-MaX" secondAttribute="centerX" id="DC0-LP-AqP"/>
                             <constraint firstItem="eGM-j4-MdS" firstAttribute="leading" secondItem="2HY-0k-amy" secondAttribute="leading" id="DnQ-vJ-pef"/>
+                            <constraint firstItem="aMS-Pm-F4P" firstAttribute="leading" secondItem="h3G-6u-MDY" secondAttribute="trailing" constant="8" id="G2i-hv-YYs"/>
                             <constraint firstItem="h3G-6u-MDY" firstAttribute="leading" secondItem="2HY-0k-amy" secondAttribute="leading" constant="32" id="HV1-oE-NHh"/>
+                            <constraint firstItem="2HY-0k-amy" firstAttribute="trailing" secondItem="aMS-Pm-F4P" secondAttribute="trailing" constant="32" id="PJ0-gF-JfO"/>
                             <constraint firstItem="h3G-6u-MDY" firstAttribute="top" secondItem="eGM-j4-MdS" secondAttribute="bottom" constant="16" id="bAo-fr-tko"/>
                             <constraint firstItem="2HY-0k-amy" firstAttribute="bottom" secondItem="Lg4-cw-1f9" secondAttribute="bottom" constant="16" id="cQ2-tc-sX2"/>
+                            <constraint firstItem="aMS-Pm-F4P" firstAttribute="centerY" secondItem="h3G-6u-MDY" secondAttribute="centerY" id="lle-Qs-Qwv"/>
                             <constraint firstItem="eGM-j4-MdS" firstAttribute="trailing" secondItem="2HY-0k-amy" secondAttribute="trailing" id="uEk-dG-YGL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2HY-0k-amy"/>
