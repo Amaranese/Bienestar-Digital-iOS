@@ -17,7 +17,6 @@
 		2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */; };
 		2B23FBDB23C9E48000D264AC /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDA23C9E48000D264AC /* AppCell.swift */; };
 		2B23FBDD23C9E55E00D264AC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B23FBDC23C9E55E00D264AC /* App.swift */; };
-		2B4FFDBA23F2D35F001B3194 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4FFDB923F2D35F001B3194 /* NotificationVC.swift */; };
 		2B593D5623A8D02200656FC4 /* EditUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B593D5523A8D02200656FC4 /* EditUserVC.swift */; };
 		2B73052A23E8660E008B0404 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73052923E8660E008B0404 /* User.swift */; };
 		2B7DBE2A23F1EB06008DE7FA /* UpdateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DBE2923F1EB06008DE7FA /* UpdateUser.swift */; };
@@ -69,7 +68,6 @@
 		2B23FBD823C9E25700D264AC /* SeleccionarAppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionarAppsVC.swift; sourceTree = "<group>"; };
 		2B23FBDA23C9E48000D264AC /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		2B23FBDC23C9E55E00D264AC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		2B4FFDB923F2D35F001B3194 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
 		2B593D5523A8D02200656FC4 /* EditUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserVC.swift; sourceTree = "<group>"; };
 		2B73052923E8660E008B0404 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2B7DBE2923F1EB06008DE7FA /* UpdateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUser.swift; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 				2BCB030C23A3A6FC00F64ECE /* Info.plist */,
 				2BDCA27323D5D39600FF9089 /* usage.csv */,
 				2B0E561C23DDAAE9003C3FA9 /* Utils.swift */,
-				2B4FFDB923F2D35F001B3194 /* NotificationVC.swift */,
 			);
 			path = "Bienestar-Digital-iOS";
 			sourceTree = "<group>";
@@ -550,7 +547,6 @@
 				2BCB02FF23A3A6FC00F64ECE /* AppDelegate.swift in Sources */,
 				2B0E561823DD90A1003C3FA9 /* UsagesRequest.swift in Sources */,
 				2B23FBD923C9E25700D264AC /* SeleccionarAppsVC.swift in Sources */,
-				2B4FFDBA23F2D35F001B3194 /* NotificationVC.swift in Sources */,
 				2B0E561F23DDABF9003C3FA9 /* UsageCell.swift in Sources */,
 				2BFC53D323D77C5F00394986 /* UsageRegistration.swift in Sources */,
 				2B73052A23E8660E008B0404 /* User.swift in Sources */,
