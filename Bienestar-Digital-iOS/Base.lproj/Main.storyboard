@@ -230,8 +230,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ut-bc-Kds">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Ut-bc-Kds">
                                 <rect key="frame" x="89.5" y="692.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onMessages:" destination="BYZ-38-t0r" eventType="valueChanged" id="JVn-q9-kKF"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4p-NK-bvv">
                                 <rect key="frame" x="146.5" y="697.5" width="121.5" height="20.5"/>
@@ -239,10 +242,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ef2-so-eSy">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ef2-so-eSy">
                                 <rect key="frame" x="90" y="640" width="51" height="31"/>
                                 <connections>
                                     <action selector="notify:" destination="Zm7-1G-laJ" eventType="valueChanged" id="Yre-0N-sej"/>
+                                    <action selector="onNotifications:" destination="BYZ-38-t0r" eventType="valueChanged" id="B3N-is-2iZ"/>
                                 </connections>
                             </switch>
                         </subviews>

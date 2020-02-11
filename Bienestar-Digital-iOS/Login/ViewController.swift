@@ -10,6 +10,29 @@ import Alamofire
 class ViewController: UIViewController {
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
+    @IBAction func onNotifications(_ sender: Any) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (status, error) in
+            if !status {
+                debugPrint("User declined notification")
+            }
+        }
+    }
+    @IBAction func onMessages(_ sender: Any) {
+        if let messagesSwitch = sender as? UISwitch {
+            if messagesSwitch.isOn {
+                let alert = UIAlertController(title: "Success", message: "Now you will receive messages", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            } else {
+                let alert = UIAlertController(title: "Success", message: "Now you will NOT receive messages anymore", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            }
+        }
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
