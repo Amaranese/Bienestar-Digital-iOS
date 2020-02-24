@@ -13,15 +13,12 @@ import Alamofire
 class ControlViewController: UIViewController {
     @IBOutlet weak var picker: UIPickerView!
     @IBOutlet weak var maxtime: UITextField!
-    
     var apps: [App]!
     private var appSelected = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
-
         // Do any additional setup after loading the view.
     }
     @IBAction func save(_ sender: UIButton) {
@@ -50,7 +47,6 @@ class ControlViewController: UIViewController {
             }
         }
     }
-    
     private func loadMaxTime(appName: String) {
         let token = UserDefaults.standard.string(forKey: "token")!
         let userID = UserDefaults.standard.integer(forKey: "user_id")

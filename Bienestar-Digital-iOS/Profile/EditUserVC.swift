@@ -68,31 +68,22 @@ class EditUserVC: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
-        
         updateProfile(email: newemail.text, name: newName.text,
                       oldPassword: oldPassword.text, newPassword: newpass.text,
                       confirmNewPassword: repeatnewpass.text)
     }
-    
-
     private func updateProfile(email: String?, name: String?,
                                oldPassword: String?, newPassword: String?, confirmNewPassword: String?) {
-        
-        
         let userID = UserDefaults.standard.integer(forKey: "user_id")
         let token = UserDefaults.standard.string(forKey: "token")!
         let url = "http://localhost:8888/Bienestar/public/index.php/api/user/\(userID)"
-        
         let data = UpdateUser(email: email, name: name,
                               oldPassword: oldPassword, newPassword: newPassword, confirmNewPassword: confirmNewPassword)
-            
-        
         if let parameters = try? data.asDictionary() {
             Alamofire.request(url, method: .put, parameters: parameters, encoding: JSONEncoding.default,
                               headers: ["Content-Type": "application/json", "Authorization": token]).responseString { [weak self] response in
                                 guard let self = self else { return }
                                 if response.response!.statusCode == 200 {
-                                    
                                     let alert = UIAlertController(title: "Success", message: "User updated", preferredStyle: .alert)
                                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (alert: UIAlertAction!) in
                                         self.loadProfile()
