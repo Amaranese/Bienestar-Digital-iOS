@@ -69,7 +69,6 @@ class ControlViewController: UIViewController {
         }
         
     }
-
 }
 extension ControlViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

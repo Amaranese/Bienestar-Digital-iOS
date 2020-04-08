@@ -79,8 +79,7 @@ class RegisterVC: UIViewController {
 //                        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
 //                            appDelegate.startNavViewController()
 //                        }
-                        
-//                        let seleccionaAppsVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "SeleccionarAppsVC") as! SeleccionarAppsVC
+//let seleccionaAppsVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "SeleccionarAppsVC") as! SeleccionarAppsVC
 //                        self.present(seleccionaAppsVC, animated: true, completion: nil)
                         self.dismiss(animated: true, completion: nil)
                     }))

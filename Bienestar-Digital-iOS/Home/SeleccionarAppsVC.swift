@@ -38,7 +38,6 @@ class SeleccionarAppsVC: UIViewController {
                                         let usages: [UsageApps] = try! JSONDecoder().decode([UsageApps].self, from: jsonData)
                                         self.updateUsages(usages: usages)
                                     }
-                                    
                                 }
             }
         }

@@ -96,6 +96,5 @@ class EditUserVC: UIViewController {
                                 }
             }
         }
-        
     }
 }
